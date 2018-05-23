@@ -29,14 +29,6 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key> KAKAO_APP_KEY</key>
-	<string>0c534ae76452401ae9400ead9031121c</string>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>kakao0c534ae76452401ae9400ead9031121c</string>
-		<string>kakaokompassauth</string>
-		<string>storykompassauth</string>
-	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -52,6 +44,16 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>KAKAO_APP_KEY</key>
+	<string>0c534ae76452401ae9400ead9031121c</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>kakao0c534ae76452401ae9400ead9031121c</string>
+		<string>kakaokompassauth</string>
+		<string>storykompassauth</string>
+		<string>kakaolink</string>
+		<string>storylink</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

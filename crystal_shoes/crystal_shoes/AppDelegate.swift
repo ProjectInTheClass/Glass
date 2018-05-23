@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  glass_shoes
+//  crystal_shoes
 //
 //  Created by software_studio1 on 2018. 5. 23..
 //  Copyright © 2018년 software_studio1_예림. All rights reserved.
@@ -13,7 +13,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    //카카오톡 API
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        if KOSession.isKakaoAccountLoginCallback(url) {
+            return KOSession.handleOpen(url)
+        }
+        return true
+    }
+    //카카오톡 API
+    func application(_ app: UIApplication, open url: URL, options: [String : AnyObject] = [:]) -> Bool {
+        if KOSession.isKakaoAccountLoginCallback(url) {
+            return KOSession.handleOpen(url)
+        }
+        return true
+    }
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
@@ -35,6 +50,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        KOSession.handleDidBecomeActive()
+
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

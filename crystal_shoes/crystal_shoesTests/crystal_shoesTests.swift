@@ -1,15 +1,15 @@
 //
-//  glass_shoesTests.swift
-//  glass_shoesTests
+//  crystal_shoesTests.swift
+//  crystal_shoesTests
 //
 //  Created by software_studio1 on 2018. 5. 23..
 //  Copyright © 2018년 software_studio1_예림. All rights reserved.
 //
 
 import XCTest
-@testable import glass_shoes
+@testable import crystal_shoes
 
-class glass_shoesTests: XCTestCase {
+class crystal_shoesTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rvn-tX-gzm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="crystal_shoes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYa-Dz-PAz" customClass="KOLoginButton">
+                                <rect key="frame" x="62" y="592" width="313" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="카카오톡 로그인"/>
+                                <connections>
+                                    <action selector="kakao_login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p3k-Pv-Egk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.60000000000002" y="435.83208395802103"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cZC-Ht-bst">
+            <objects>
+                <viewController id="rvn-tX-gzm" customClass="ViewController" customModule="glass_shoes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eDi-Mf-kVT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmG-jc-ctW">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.78823529410000004" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="T45-CC-uXt" kind="show" id="Liq-zq-SVU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nmG-jc-ctW" firstAttribute="top" secondItem="UCg-Mt-gEU" secondAttribute="top" id="7NA-m3-GmX"/>
+                            <constraint firstItem="UCg-Mt-gEU" firstAttribute="trailing" secondItem="nmG-jc-ctW" secondAttribute="trailing" id="dLc-hd-6g5"/>
+                            <constraint firstItem="nmG-jc-ctW" firstAttribute="leading" secondItem="UCg-Mt-gEU" secondAttribute="leading" id="mVd-y6-jM8"/>
+                            <constraint firstItem="UCg-Mt-gEU" firstAttribute="bottom" secondItem="nmG-jc-ctW" secondAttribute="bottom" id="r5d-NH-BWC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UCg-Mt-gEU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wuh-Ao-LCB" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-623" y="436"/>
+        </scene>
+        <!--내사이즈-->
+        <scene sceneID="UaO-BH-Qhv">
+            <objects>
+                <viewController id="nNE-gb-4UG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OcC-H7-gXV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zbx-tK-Ssx"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="내사이즈" id="HlK-KG-6mA">
+                        <barButtonItem key="backBarButtonItem" title="이전" id="AkN-Z5-eaN"/>
+                        <barButtonItem key="rightBarButtonItem" title="다음" id="spI-72-yzT"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qUi-Kl-PXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41" y="1190"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AVw-eQ-HUA">
+            <objects>
+                <viewController id="T45-CC-uXt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B09-QF-pmX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="앱소개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rL-Hq-bqh">
+                                <rect key="frame" x="165" y="105" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6M-af-FJX">
+                                <rect key="frame" x="86.5" y="617" width="202" height="30"/>
+                                <state key="normal" title="나에게 맞는 신발 사이즈 찾기 시작"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="0tY-30-0ST"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="B6M-af-FJX" firstAttribute="centerX" secondItem="B09-QF-pmX" secondAttribute="centerX" id="I1R-0c-XM8"/>
+                            <constraint firstItem="zX2-zR-cvv" firstAttribute="bottom" secondItem="B6M-af-FJX" secondAttribute="bottom" constant="20" id="YtK-Nv-oUq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zX2-zR-cvv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qul-yu-j0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41" y="436"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Wr-ZJ-o2F">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8JU-oc-bSO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xtn-A7-yM8">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nNE-gb-4UG" kind="relationship" relationship="rootViewController" id="1UF-Kv-eyz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vVe-4G-f7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-631" y="1191"/>
+        </scene>
+    </scenes>
+</document>
