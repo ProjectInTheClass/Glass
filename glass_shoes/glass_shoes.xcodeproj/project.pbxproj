@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18418A7520B51DAA00F842BD /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18418A7420B51DAA00F842BD /* KakaoOpenSDK.framework */; };
 		1870FD0520B472B600F3F93C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1870FD0420B472B600F3F93C /* AppDelegate.swift */; };
 		1870FD0720B472B600F3F93C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1870FD0620B472B600F3F93C /* ViewController.swift */; };
 		1870FD0A20B472B600F3F93C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1870FD0820B472B600F3F93C /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18418A7420B51DAA00F842BD /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		1870FD0120B472B600F3F93C /* glass_shoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = glass_shoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1870FD0420B472B600F3F93C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1870FD0620B472B600F3F93C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18418A7520B51DAA00F842BD /* KakaoOpenSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,9 +77,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18418A7320B51D7700F842BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18418A7420B51DAA00F842BD /* KakaoOpenSDK.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		1870FCF820B472B600F3F93C = {
 			isa = PBXGroup;
 			children = (
+				18418A7320B51D7700F842BD /* Frameworks */,
 				1870FD0320B472B600F3F93C /* glass_shoes */,
 				1870FD1820B472B700F3F93C /* glass_shoesTests */,
 				1870FD2320B472B800F3F93C /* glass_shoesUITests */,
@@ -432,11 +444,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/New\\ Group",
+				);
 				INFOPLIST_FILE = glass_shoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "yerim.glass-shoes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -450,11 +467,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/New\\ Group",
+				);
 				INFOPLIST_FILE = glass_shoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "yerim.glass-shoes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
