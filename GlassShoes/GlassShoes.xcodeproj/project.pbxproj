@@ -18,6 +18,7 @@
 		2583495420BFEB9F00A28B43 /* ShoesClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2583495320BFEB9F00A28B43 /* ShoesClass.swift */; };
 		5656282D3D7173B80675467F /* Pods_GlassShoesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068F1D0F15C75F0A1826D8D9 /* Pods_GlassShoesUITests.framework */; };
 		7E79A9519AB4E8B4C1C94D75 /* Pods_GlassShoesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37249CA639B16C6F67C68EAE /* Pods_GlassShoesTests.framework */; };
+		B8BD49E020C3E6C400E12C30 /* 내사이즈ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BD49DF20C3E6C400E12C30 /* 내사이즈ViewController.swift */; };
 		C85FCE37A36B47FE55306F70 /* Pods_GlassShoes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F3BDB1823EA7313BDCF97A /* Pods_GlassShoes.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		6D79D99D2BCE020CF7956A12 /* Pods-GlassShoes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlassShoes.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlassShoes/Pods-GlassShoes.release.xcconfig"; sourceTree = "<group>"; };
 		77F3BDB1823EA7313BDCF97A /* Pods_GlassShoes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlassShoes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80AE6F034DE177275AFA8C7 /* Pods-GlassShoesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlassShoesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlassShoesUITests/Pods-GlassShoesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B8BD49DF20C3E6C400E12C30 /* 내사이즈ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "내사이즈ViewController.swift"; sourceTree = "<group>"; };
 		BFAD366D8DFC013B6E1EEF03 /* Pods-GlassShoesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlassShoesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlassShoesTests/Pods-GlassShoesTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +122,7 @@
 			children = (
 				1891A88D20B821C100545026 /* AppDelegate.swift */,
 				1891A88F20B821C100545026 /* ViewController.swift */,
+				B8BD49DF20C3E6C400E12C30 /* 내사이즈ViewController.swift */,
 				1891A89120B821C100545026 /* Main.storyboard */,
 				2583495320BFEB9F00A28B43 /* ShoesClass.swift */,
 				1891A89420B821C200545026 /* Assets.xcassets */,
@@ -387,6 +390,7 @@
 				1891A89020B821C100545026 /* ViewController.swift in Sources */,
 				1891A88E20B821C100545026 /* AppDelegate.swift in Sources */,
 				2583495420BFEB9F00A28B43 /* ShoesClass.swift in Sources */,
+				B8BD49E020C3E6C400E12C30 /* 내사이즈ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
