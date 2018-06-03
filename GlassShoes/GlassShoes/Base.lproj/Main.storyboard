@@ -68,7 +68,7 @@
                         <barButtonItem key="rightBarButtonItem" title="다음" id="Q0Z-xl-3pH">
                             <connections>
                                 <action selector="next:" destination="go9-4p-Vbe" id="JSe-CY-95R"/>
-                                <segue destination="vBP-82-NUe" kind="show" id="8oJ-JX-3kF"/>
+                                <segue destination="dke-M1-Xvx" kind="presentation" id="EEx-V7-IcT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -79,6 +79,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qSX-JQ-gVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1740" y="886.50674662668678"/>
+        </scene>
+        <!--신발 검색-->
+        <scene sceneID="BYT-nc-G3j">
+            <objects>
+                <tableViewController id="W1p-BO-8xE" customClass="SearchShoesTableViewController" customModule="GlassShoes" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XwX-LN-32a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoesCell" textLabel="9UZ-43-cyA" detailTextLabel="edp-L1-EhV" style="IBUITableViewCellStyleSubtitle" id="Zhu-Dh-blN">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zhu-Dh-blN" id="JMj-OM-g05">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9UZ-43-cyA">
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="edp-L1-EhV">
+                                            <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="W1p-BO-8xE" id="9Rg-Jw-4G1"/>
+                            <outlet property="delegate" destination="W1p-BO-8xE" id="GMw-Is-qyl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="신발 검색" id="j4s-SI-bq9">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="W9b-G9-wB2"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="Searchtableview" destination="XwX-LN-32a" id="8cc-QJ-Tua"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yol-Me-e3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3455.1999999999998" y="886.50674662668678"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Yid-rL-7jy">
@@ -115,46 +165,6 @@
             </objects>
             <point key="canvasLocation" x="743" y="42"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="K4m-Fg-toZ">
-            <objects>
-                <viewController id="vBP-82-NUe" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hOd-bT-DTa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="Hs1-il-kpn">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mGU-gw-ItV">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mGU-gw-ItV" id="kM1-gs-AIe">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                    </tableView>
-                    <connections>
-                        <outlet property="searchDisplayController" destination="GGY-9s-l6B" id="zEE-IN-fDW"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1y5-fd-bmr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="GGY-9s-l6B">
-                    <connections>
-                        <outlet property="delegate" destination="vBP-82-NUe" id="NkL-lM-qOl"/>
-                        <outlet property="searchContentsController" destination="vBP-82-NUe" id="1zg-tR-fJP"/>
-                        <outlet property="searchResultsDataSource" destination="vBP-82-NUe" id="7PA-5q-XeL"/>
-                        <outlet property="searchResultsDelegate" destination="vBP-82-NUe" id="qvG-E7-mEV"/>
-                    </connections>
-                </searchDisplayController>
-            </objects>
-            <point key="canvasLocation" x="2513" y="887"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ojl-j0-BOR">
             <objects>
@@ -172,6 +182,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rBO-di-Mhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="800.79999999999995" y="886.50674662668678"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dJP-ld-Uvz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dke-M1-Xvx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="voC-d3-Wwi">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="W1p-BO-8xE" kind="relationship" relationship="rootViewController" id="815-eb-h0J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bV0-tM-K6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2516" y="886.50674662668678"/>
         </scene>
     </scenes>
 </document>
