@@ -16,6 +16,7 @@
 		1891A8AE20B821C200545026 /* GlassShoesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891A8AD20B821C200545026 /* GlassShoesUITests.swift */; };
 		189FE8E020C42D8E00C6F3CD /* SearchShoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189FE8DF20C42D8E00C6F3CD /* SearchShoesTableViewController.swift */; };
 		189FE8E220C4397400C6F3CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 189FE8E120C4397400C6F3CD /* GoogleService-Info.plist */; };
+		2523318D20C538120044A6ED /* selectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2523318C20C538120044A6ED /* selectedViewController.swift */; };
 		5656282D3D7173B80675467F /* Pods_GlassShoesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068F1D0F15C75F0A1826D8D9 /* Pods_GlassShoesUITests.framework */; };
 		7E79A9519AB4E8B4C1C94D75 /* Pods_GlassShoesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37249CA639B16C6F67C68EAE /* Pods_GlassShoesTests.framework */; };
 		B8BD49E020C3E6C400E12C30 /* 내사이즈ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BD49DF20C3E6C400E12C30 /* 내사이즈ViewController.swift */; };
@@ -56,6 +57,7 @@
 		1891A8AF20B821C200545026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		189FE8DF20C42D8E00C6F3CD /* SearchShoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchShoesTableViewController.swift; sourceTree = "<group>"; };
 		189FE8E120C4397400C6F3CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2523318C20C538120044A6ED /* selectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectedViewController.swift; sourceTree = "<group>"; };
 		275BEA944FE6BDE838291B67 /* Pods-GlassShoesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlassShoesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlassShoesTests/Pods-GlassShoesTests.release.xcconfig"; sourceTree = "<group>"; };
 		37249CA639B16C6F67C68EAE /* Pods_GlassShoesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlassShoesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E5916919AFE83299747C033 /* Pods-GlassShoes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlassShoes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlassShoes/Pods-GlassShoes.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				1891A88F20B821C100545026 /* ViewController.swift */,
 				B8BD49DF20C3E6C400E12C30 /* 내사이즈ViewController.swift */,
 				1891A89120B821C100545026 /* Main.storyboard */,
+				2523318C20C538120044A6ED /* selectedViewController.swift */,
 				1891A89420B821C200545026 /* Assets.xcassets */,
 				1891A89620B821C200545026 /* LaunchScreen.storyboard */,
 				189FE8E120C4397400C6F3CD /* GoogleService-Info.plist */,
@@ -393,6 +396,7 @@
 				1891A88E20B821C100545026 /* AppDelegate.swift in Sources */,
 				189FE8E020C42D8E00C6F3CD /* SearchShoesTableViewController.swift in Sources */,
 				B8BD49E020C3E6C400E12C30 /* 내사이즈ViewController.swift in Sources */,
+				2523318D20C538120044A6ED /* selectedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
