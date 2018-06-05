@@ -9,49 +9,49 @@
   }, {
     "brand" : "나이키",
     "gender" : "공용",
-    "name" : "나이키 플라이니트 트레이너",
+    "name" : "플라이니트 트레이너",
     "price" : 179000,
     "product_num" : "AH8396-202",
     "size_range" : 0
   }, {
     "brand" : "나이키",
     "gender" : "남성용",
-    "name" : "나이키 에어맥스 95 에센셜",
+    "name" : "에어맥스 95 에센셜",
     "price" : 179000,
     "product_num" : "749766-108",
     "size_range" : 5
   }, {
     "brand" : "나이키",
     "gender" : "남성용",
-    "name" : "나이키 에어 베이퍼맥스 97",
+    "name" : "에어 베이퍼맥스 97",
     "price" : 269000,
     "product_num" : "AJ7291-700",
     "size_range" : 0
   }, {
     "brand" : "나이키",
     "gender" : "남성용",
-    "name" : "나이키 에어맥스 90 NS GPX SP",
+    "name" : "에어맥스 90 NS GPX SP",
     "price" : 1253000,
     "product_num" : "AJ7182-001",
     "size_range" : 0
   }, {
     "brand" : "나이키",
     "gender" : "여성용",
-    "name" : "나이키 에머 베이퍼맥스 플라이니트 2",
+    "name" : "에머 베이퍼맥스 플라이니트 2",
     "price" : 239000,
     "product_num" : "942843-006",
     "size_range" : -5
   }, {
     "brand" : "나이키",
     "gender" : "공용",
-    "name" : "나이키 머큐리얼 슈퍼 플라이 360 엘리트 CR7 FG",
+    "name" : "머큐리얼 슈퍼 플라이 360 엘리트 CR7 FG",
     "price" : 389000,
     "product_num" : "AJ3547-390",
     "size_range" : 5
   }, {
     "brand" : "나이키",
     "gender" : "공용",
-    "name" : "나이키 하이퍼베놈 3 엘리트 다이나믹 핏 ㅀ",
+    "name" : "하이퍼베놈 3 엘리트 다이나믹 핏 FG",
     "price" : 359000,
     "product_num" : "AJ3803-090",
     "size_range" : 5
@@ -316,6 +316,158 @@
      "price" : 69000,
      "gender": "남성용",
      "size_range" : 5      
+  },
+  {  
+    "name": "미아 5",
+    "brand":"누오보",
+    "product_num":"NC30332",
+    "price" : 69000,
+    "gender": "여성용",
+    "size_range" : 0     
+  },
+  {  
+    "name": "오티스 2",
+    "brand":"누오보",
+    "product_num":"NC30297",
+    "price" : 59000,
+    "gender": "여성용",
+    "size_range" : 0     
+  },
+  {  
+    "name": "카레나 3.5",
+    "brand":"누오보",
+    "product_num":"NC30152",
+    "price" : 59000,
+    "gender": "여성용",
+    "size_range" : 0     
+  },
+  {  
+    "name": "로빈 4",
+    "brand":"누오보",
+    "product_num":"NC50133",
+    "price" : 59000,
+    "gender": "여성용",
+    "size_range" : 0     
+  },
+  {  
+    "name": "제라 6",
+    "brand":"누오보",
+    "product_num":"NC40080",
+    "price" : 59000,
+    "gender": "여성용",
+    "size_range" : 0     
+  },
+  {  
+    "name": "레나 2",
+    "brand":"누오보",
+    "product_num":"NC30281",
+    "price" : 59000,
+    "gender": "여성용",
+    "size_range" : 0     
+  },
+  {  
+    "name":"그레이시 5",
+    "brand":"누오보",
+    "product_num":"NC60133",
+    "price" : 59000,
+    "gender": "여성용",
+    "size_range" : 0     
+  },
+  {  
+    "name": "렉시 1",
+    "brand":"누오보",
+    "product_num":"NC50134",
+    "price" : 45000,
+    "gender": "여성용",
+    "size_range" : 0     
+  },
+  {  
+    "name": "올라 6",
+    "brand":"누오보",
+    "product_num":"NC60129",
+    "price" : 59000,
+    "gender": "여성용",
+    "size_range" : 0     
+  },
+  {  
+    "name": "미아 5",
+    "brand":"누오보",
+    "product_num":"NC30332",
+    "price" : 69000,
+    "gender": "여성용",
+    "size_range" : 0     
+  },
+  {  
+    "name": "티니 1",
+    "brand":"누오보",
+    "product_num":"NC50124",
+    "price" : 39000,
+    "gender": "여성용",
+    "size_range" : 0     
+  },
+  {  
+    "name": "튜멀트 1",
+    "brand":"누오보",
+    "product_num":"NC0117",
+    "price" : 49000,
+    "gender": "여성용",
+    "size_range" : 0     
+  },
+  {  
+    "name": "세라픽 6.5",
+    "brand":"누오보",
+    "product_num":"NC60132",
+    "price" : 59000,
+    "gender": "여성용",
+    "size_range" : 0     
+  },
+  {  
+    "name": "헤이미쉬 2.5",
+    "brand":"누오보",
+    "product_num":"NC50139",
+    "price" : 59000,
+    "gender": "여성용",
+    "size_range" : 0     
+  },
+  {  
+    "name": "레퀴엠 2.5",
+    "brand":"누오보",
+    "product_num":"NC50138",
+    "price" : 59000,
+    "gender": "여성용",
+    "size_range" : 0     
+  },
+  {  
+    "name": "페뷸러스 5",
+    "brand":"누오보",
+    "product_num":"NC60130",
+    "price" : 69000,
+    "gender": "여성용",
+    "size_range" : 0     
+  },
+  {  
+    "name": "일루션 5",
+    "brand":"누오보",
+    "product_num":"NC60128",
+    "price" : 59000,
+    "gender": "여성용",
+    "size_range" : 0     
+  },
+  {  
+    "name": "문라이트 5",
+    "brand":"누오보",
+    "product_num":"NC60125",
+    "price" : 59000,
+    "gender": "여성용",
+    "size_range" : 0     
+  },
+  {  
+    "name": "레테라",
+    "brand":"누오보",
+    "product_num":"NC30320",
+    "price" : 59000,
+    "gender": "여성용",
+    "size_range" : 0     
   }
  ]
 }
