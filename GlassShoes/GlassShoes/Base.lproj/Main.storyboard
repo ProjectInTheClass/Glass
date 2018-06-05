@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <color key="backgroundColor" red="0.12941176469999999" green="0.78823529410000004" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <segue destination="Gzn-EL-2HP" kind="show" id="kF0-Fv-jxP"/>
+                                    <segue destination="Md4-ae-GWI" kind="show" id="cAL-Mk-tWp"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="zv5-Sl-lVa">
@@ -274,70 +274,66 @@
             <point key="canvasLocation" x="4181.6000000000004" y="886.50674662668678"/>
         </scene>
         <!--Intro View Controller-->
-        <scene sceneID="Yid-rL-7jy">
+        <scene sceneID="dTO-pb-AQR">
             <objects>
-                <viewController id="Gzn-EL-2HP" customClass="introViewController" customModule="GlassShoes" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5gf-SS-HIx">
+                <viewController id="Md4-ae-GWI" customClass="introViewController" customModule="GlassShoes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T2J-sk-A9c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMx-gh-2yH">
-                                <rect key="frame" x="87" y="719" width="202" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfJ-a6-JZa">
+                                <rect key="frame" x="86" y="723" width="202" height="30"/>
                                 <color key="backgroundColor" red="0.12941176469999999" green="0.78823529410000004" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="QMx-gh-2yH" secondAttribute="height" multiplier="101:15" id="1jp-s2-lNi"/>
+                                    <constraint firstAttribute="width" secondItem="qfJ-a6-JZa" secondAttribute="height" multiplier="101:15" id="1AX-uk-6JD"/>
+                                    <constraint firstAttribute="height" constant="30" id="LoT-qb-X9y"/>
+                                    <constraint firstAttribute="width" constant="202" id="ls9-IB-xcc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <state key="normal" title="나에게 맞는 신발 사이즈 찾기 시작">
                                     <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="05Q-Io-4QI" kind="presentation" id="6Tg-oM-XcQ"/>
+                                    <segue destination="05Q-Io-4QI" kind="show" id="8bV-0w-kFP"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="Uor-yX-jpo">
-                                <rect key="frame" x="75" y="126" width="225" height="190"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="1N1-Tg-Jri">
+                                <rect key="frame" x="67" y="145.66666666666666" width="240" height="209.99999999999997"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Uor-yX-jpo" secondAttribute="height" multiplier="45:38" id="MTz-kH-4Xf"/>
+                                    <constraint firstAttribute="width" secondItem="1N1-Tg-Jri" secondAttribute="height" multiplier="8:7" id="AXm-qR-kse"/>
+                                    <constraint firstAttribute="height" constant="210" id="JSS-Ot-cgz"/>
+                                    <constraint firstAttribute="width" constant="240" id="ULD-0n-LMn"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="온라인으로 신발을 살때 어떤 사이즈를 사야하는지 몰라 난감했던 경험, 다들 있으시죠? 이제 더 이상 걱정하지 않으셔도 됩니다." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y3g-Di-u5b">
-                                <rect key="frame" x="22" y="362" width="332" height="88"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="온라인으로 신발을 살때 어떤 사이즈를 사야하는지 몰라 난감했던 경험, 다들 있으시죠? 이제 더 이상 걱정하지 않으셔도 됩니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ur-bv-JBV">
+                                <rect key="frame" x="40" y="363.66666666666669" width="294" height="85"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Y3g-Di-u5b" secondAttribute="height" multiplier="83:22" id="OBQ-3z-vuE"/>
+                                    <constraint firstAttribute="width" secondItem="3Ur-bv-JBV" secondAttribute="height" multiplier="294:85" id="N0v-3M-hcL"/>
+                                    <constraint firstAttribute="width" constant="294" id="Pw7-7G-3iL"/>
+                                    <constraint firstAttribute="height" constant="85" id="ZE1-JR-XHw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Y3g-Di-u5b" firstAttribute="top" secondItem="Uor-yX-jpo" secondAttribute="bottom" constant="46" id="2mp-rn-5O8"/>
-                            <constraint firstItem="Y3g-Di-u5b" firstAttribute="centerX" secondItem="5gf-SS-HIx" secondAttribute="centerX" id="Csu-GV-6h4"/>
-                            <constraint firstItem="QMx-gh-2yH" firstAttribute="top" secondItem="Y3g-Di-u5b" secondAttribute="bottom" constant="269" id="D64-2T-pf9"/>
-                            <constraint firstItem="oMx-Su-H6t" firstAttribute="trailing" secondItem="Y3g-Di-u5b" secondAttribute="trailing" constant="21" id="EDz-0v-9CS"/>
-                            <constraint firstItem="QMx-gh-2yH" firstAttribute="centerX" secondItem="5gf-SS-HIx" secondAttribute="centerX" id="Hk6-t3-mSy"/>
-                            <constraint firstItem="Y3g-Di-u5b" firstAttribute="leading" secondItem="oMx-Su-H6t" secondAttribute="leading" constant="22" id="Iek-LT-RYZ"/>
-                            <constraint firstItem="Uor-yX-jpo" firstAttribute="centerX" secondItem="5gf-SS-HIx" secondAttribute="centerX" id="MbG-c7-aV6"/>
-                            <constraint firstItem="Y3g-Di-u5b" firstAttribute="width" secondItem="QMx-gh-2yH" secondAttribute="height" multiplier="166:15" id="Mgb-PT-gWE"/>
-                            <constraint firstItem="QMx-gh-2yH" firstAttribute="width" secondItem="5gf-SS-HIx" secondAttribute="height" multiplier="101:406" id="QTs-wb-72n"/>
-                            <constraint firstItem="Uor-yX-jpo" firstAttribute="top" secondItem="oMx-Su-H6t" secondAttribute="top" constant="82" id="RVE-Ul-tdO"/>
-                            <constraint firstItem="oMx-Su-H6t" firstAttribute="bottom" secondItem="QMx-gh-2yH" secondAttribute="bottom" constant="29" id="SwL-Lf-x6C"/>
-                            <constraint firstItem="Y3g-Di-u5b" firstAttribute="centerX" secondItem="oMx-Su-H6t" secondAttribute="centerX" id="bgW-GB-pG7"/>
-                            <constraint firstItem="Y3g-Di-u5b" firstAttribute="leading" secondItem="oMx-Su-H6t" secondAttribute="leading" constant="22" id="eSm-90-3DY"/>
-                            <constraint firstItem="Y3g-Di-u5b" firstAttribute="centerY" secondItem="5gf-SS-HIx" secondAttribute="centerY" id="mCs-tY-N2E"/>
-                            <constraint firstItem="Y3g-Di-u5b" firstAttribute="top" secondItem="Uor-yX-jpo" secondAttribute="bottom" constant="46" id="pSF-xf-3LC"/>
+                            <constraint firstItem="3Ur-bv-JBV" firstAttribute="top" secondItem="1N1-Tg-Jri" secondAttribute="bottom" constant="8" id="O8q-tR-58Q"/>
+                            <constraint firstItem="3Ur-bv-JBV" firstAttribute="centerX" secondItem="T2J-sk-A9c" secondAttribute="centerX" id="Pmc-Ss-s4G"/>
+                            <constraint firstItem="qfJ-a6-JZa" firstAttribute="centerX" secondItem="T2J-sk-A9c" secondAttribute="centerX" id="X8C-z8-5hx"/>
+                            <constraint firstItem="3Ur-bv-JBV" firstAttribute="centerY" secondItem="T2J-sk-A9c" secondAttribute="centerY" id="gx6-dy-4bH"/>
+                            <constraint firstItem="1N1-Tg-Jri" firstAttribute="centerX" secondItem="T2J-sk-A9c" secondAttribute="centerX" id="ppV-FT-Emx"/>
+                            <constraint firstItem="qfJ-a6-JZa" firstAttribute="bottom" secondItem="gcV-kg-6hu" secondAttribute="bottom" constant="-25" id="yun-Ca-89N"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="oMx-Su-H6t"/>
+                        <viewLayoutGuide key="safeArea" id="gcV-kg-6hu"/>
                     </view>
                     <connections>
-                        <outlet property="startbutton" destination="QMx-gh-2yH" id="IzJ-Nq-R6O"/>
+                        <outlet property="start" destination="qfJ-a6-JZa" id="4SI-ze-CzN"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W54-AG-j45" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjO-nP-dNI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="741.60000000000002" y="41.379310344827587"/>
+            <point key="canvasLocation" x="934" y="95"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ojl-j0-BOR">

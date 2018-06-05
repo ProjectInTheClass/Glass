@@ -10,10 +10,11 @@ import UIKit
 
 class introViewController: UIViewController {
 
-    @IBOutlet weak var startbutton: UIButton!
+    @IBOutlet weak var start: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        startbutton.layer.cornerRadius = 20
+        start.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
 
