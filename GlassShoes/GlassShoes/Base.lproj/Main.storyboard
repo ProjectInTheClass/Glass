@@ -182,56 +182,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="상품명" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mD-8O-u3i">
-                                <rect key="frame" x="16" y="338" width="343" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상품명" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mD-8O-u3i">
+                                <rect key="frame" x="59" y="371" width="78" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FMx-hD-iYP">
-                                <rect key="frame" x="0.0" y="88" width="375" height="231"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FMx-hD-iYP">
+                                <rect key="frame" x="59" y="125" width="257" height="209"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FMx-hD-iYP" secondAttribute="height" multiplier="257:209" id="KLH-gG-luk"/>
+                                    <constraint firstAttribute="height" constant="209" id="NpS-nx-suj"/>
+                                    <constraint firstAttribute="width" constant="257" id="zPw-V3-GaL"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="브랜드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztt-qN-gXH">
-                                <rect key="frame" x="19" y="313" width="45" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="브랜드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztt-qN-gXH">
+                                <rect key="frame" x="59" y="342" width="45" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="품번" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gb9-Wq-lob">
-                                <rect key="frame" x="22" y="395" width="30" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="품번" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gb9-Wq-lob">
+                                <rect key="frame" x="59" y="415" width="30" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="여성용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8WE-EY-UF4">
-                                <rect key="frame" x="19" y="432" width="45" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여성용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8WE-EY-UF4">
+                                <rect key="frame" x="59" y="444" width="45" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 추천 사이즈:  / 들어갈 문구 추천 필요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3B-4J-slF">
-                                <rect key="frame" x="0.0" y="578" width="375" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="가격" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptC-7t-YWU">
+                                <rect key="frame" x="155" y="414" width="30" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 추천 사이즈:  / 들어갈 문구 추천 필요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3B-4J-slF">
+                                <rect key="frame" x="59" y="473" width="257" height="106"/>
                                 <color key="backgroundColor" red="0.23529411759999999" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.23529411759999999" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="lda-PX-4T4"/>
+                                    <constraint firstAttribute="width" secondItem="D3B-4J-slF" secondAttribute="height" multiplier="257:106" id="pLf-Se-eFe"/>
+                                    <constraint firstAttribute="width" constant="257" id="ppp-ov-yyO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="가격" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptC-7t-YWU">
-                                <rect key="frame" x="118" y="395" width="30" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ztt-qN-gXH" firstAttribute="top" secondItem="FMx-hD-iYP" secondAttribute="bottom" constant="8" id="0z5-oc-b8T"/>
+                            <constraint firstItem="FMx-hD-iYP" firstAttribute="centerX" secondItem="5XU-1W-v1y" secondAttribute="centerX" id="4Hy-6E-Lnh"/>
+                            <constraint firstItem="8WE-EY-UF4" firstAttribute="leading" secondItem="gb9-Wq-lob" secondAttribute="leading" id="7am-OD-NdC"/>
+                            <constraint firstItem="ptC-7t-YWU" firstAttribute="leading" secondItem="gb9-Wq-lob" secondAttribute="trailing" constant="66" id="AKi-2U-dex"/>
+                            <constraint firstItem="ptC-7t-YWU" firstAttribute="leading" secondItem="gb9-Wq-lob" secondAttribute="trailing" constant="66" id="BsM-dH-yBA"/>
+                            <constraint firstItem="9mD-8O-u3i" firstAttribute="top" secondItem="ztt-qN-gXH" secondAttribute="bottom" constant="8" id="LDp-dH-cxL"/>
+                            <constraint firstItem="gb9-Wq-lob" firstAttribute="leading" secondItem="9mD-8O-u3i" secondAttribute="leading" id="LE1-Td-I1T"/>
+                            <constraint firstItem="gb9-Wq-lob" firstAttribute="top" secondItem="9mD-8O-u3i" secondAttribute="bottom" constant="8" id="Ygt-1B-yjp"/>
+                            <constraint firstItem="9mD-8O-u3i" firstAttribute="top" secondItem="ztt-qN-gXH" secondAttribute="bottom" constant="8" id="f9R-rB-49I"/>
+                            <constraint firstItem="D3B-4J-slF" firstAttribute="leading" secondItem="9mD-8O-u3i" secondAttribute="leading" id="fXW-7k-PWV"/>
+                            <constraint firstItem="D3B-4J-slF" firstAttribute="top" secondItem="8WE-EY-UF4" secondAttribute="bottom" constant="8" id="hwq-Eh-0cU"/>
+                            <constraint firstItem="8WE-EY-UF4" firstAttribute="top" secondItem="gb9-Wq-lob" secondAttribute="bottom" constant="8" id="jxD-7G-GC9"/>
+                            <constraint firstItem="9mD-8O-u3i" firstAttribute="leading" secondItem="ztt-qN-gXH" secondAttribute="leading" id="kU8-2k-S0Z"/>
+                            <constraint firstItem="FMx-hD-iYP" firstAttribute="top" secondItem="GZB-7v-Cmd" secondAttribute="top" constant="37" id="uZk-jh-926"/>
+                            <constraint firstItem="FMx-hD-iYP" firstAttribute="leading" secondItem="9mD-8O-u3i" secondAttribute="leading" id="wJh-bK-aw3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="GZB-7v-Cmd"/>
                     </view>
                     <navigationItem key="navigationItem" title="신발 상세 정보" id="qT8-Y3-0We"/>
