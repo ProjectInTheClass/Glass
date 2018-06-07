@@ -20,8 +20,15 @@ class selectedViewController: UIViewController {
     @IBOutlet weak var recommendedSize: UILabel!
     
     @IBAction func gotoWeb(_ sender: Any) {
-       
-        guard let url = URL(string: "https://google.com") else { return }
+        
+        let searchUrl:String = "http://www.abcmart.co.kr/abc/search/search?searchTerm="
+      /*  let forSearchBrand:String = selectedShoes?["brand"] as! String
+        let forSearchNum:String = selectedShoes?["product_num"] as! String
+        
+        let sumUrl = searchUrl + forSearchBrand+forSearchNum
+        print(sumUrl)
+        */
+        guard let url = URL(string: searchUrl ) else { return }
         
         let safariViewController = SFSafariViewController(url: url)
         
@@ -76,6 +83,8 @@ class selectedViewController: UIViewController {
             let image = UIImage(data: data)
             selShoImage.image = image
         }
+        
+      
         
     }
 
