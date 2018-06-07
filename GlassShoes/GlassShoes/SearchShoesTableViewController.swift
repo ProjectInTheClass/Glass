@@ -161,8 +161,16 @@ class SearchShoesTableViewController: UITableViewController, UISearchResultsUpda
         // Pass the selected object to the new view controller.
         if let indexPath = self.tableView.indexPathForSelectedRow,
             let nextVC = segue.destination as? selectedViewController {
-            let selectedData = ShoesList[indexPath.row]
-            nextVC.selectedShoes = selectedData
+                let selectedData : NSDictionary?
+                if searchController.isActive && searchController.searchBar.text != ""{
+                    selectedData = filteredShoes[indexPath.row]
+                    nextVC.selectedShoes = selectedData
+                }
+                else
+                {
+                    selectedData = self.ShoesList[indexPath.row]
+                    nextVC.selectedShoes = selectedData
+                }
         }
     }
     
