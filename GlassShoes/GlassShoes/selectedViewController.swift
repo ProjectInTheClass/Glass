@@ -77,8 +77,8 @@ class selectedViewController: UIViewController {
             selShoPrice.text = String(price)
         }
         
-        let urlStr = "https://firebasestorage.googleapis.com/v0/b/glassshoes-1a0fc.appspot.com/o/%E1%84%80%E1%85%B3%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B5%205.png?alt=media&token=7fb22444-cb1b-42c4-9937-8694ce8a3de1"
-        if let url = URL(string: urlStr),
+        let urlStr = selectedShoes?["url"] as? String
+        if let url = URL(string: urlStr!),
             let data = try? Data(contentsOf: url) {
             let image = UIImage(data: data)
             selShoImage.image = image
