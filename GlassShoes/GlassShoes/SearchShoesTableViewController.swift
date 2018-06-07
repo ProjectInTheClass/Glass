@@ -15,6 +15,24 @@ class SearchShoesTableViewController: UITableViewController, UISearchResultsUpda
     let searchController = UISearchController(searchResultsController: nil)
     
     
+    /*
+     @IBAction func oepnSFSafariViewControllerAction(_ sender: Any) {
+     
+     guard let url = URL(string: "https://zeddios.tistory.com") else { return }
+     
+     let safariViewController = SFSafariViewController(url: url)
+     
+     present(safariViewController, animated: true, completion: nil)
+     
+     }
+     
+     
+        
+     
+     */
+    
+    
+    
     var ref = Database.database().reference()
     var ShoesList = [NSDictionary?]()
     var filteredShoes = [NSDictionary?]()

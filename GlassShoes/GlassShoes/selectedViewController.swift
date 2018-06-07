@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseStorage
+import SafariServices
 
 class selectedViewController: UIViewController {
     @IBOutlet weak var selShoImage: UIImageView!
@@ -18,6 +19,16 @@ class selectedViewController: UIViewController {
     @IBOutlet weak var selShoPrice: UILabel!
     @IBOutlet weak var recommendedSize: UILabel!
     
+    @IBAction func gotoWeb(_ sender: Any) {
+       
+        guard let url = URL(string: "https://google.com") else { return }
+        
+        let safariViewController = SFSafariViewController(url: url)
+        
+        present(safariViewController, animated: true, completion: nil)
+        
+
+    }
     
     var selectedShoes : NSDictionary?
 
