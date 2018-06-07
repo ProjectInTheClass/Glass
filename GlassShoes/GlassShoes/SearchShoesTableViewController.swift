@@ -164,6 +164,7 @@ class SearchShoesTableViewController: UITableViewController, UISearchResultsUpda
                     nextVC.selectedShoes = selectedData
                 }
         }
+        
     }
     
     

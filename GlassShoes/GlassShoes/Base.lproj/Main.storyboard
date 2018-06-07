@@ -155,7 +155,7 @@
         <!--Data Write View Controller-->
         <scene sceneID="o7N-GI-tll">
             <objects>
-                <viewController storyboardIdentifier="dataWriteScene" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OfQ-SD-uoI" customClass="dataWriteViewController" customModule="GlassShoes" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dataWriteScene" id="OfQ-SD-uoI" customClass="dataWriteViewController" customModule="GlassShoes" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HDJ-ST-yjf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
