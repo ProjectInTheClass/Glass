@@ -12,6 +12,11 @@ class introViewController: UIViewController {
 
     @IBOutlet weak var start: UIButton!
     
+    @IBAction func clickto(_ sender: Any) {
+        let appDelegate = UIApplication.shared.delegate!
+        appDelegate.window!?.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainScene")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         start.layer.cornerRadius = 10
