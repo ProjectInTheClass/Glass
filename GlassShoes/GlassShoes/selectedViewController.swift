@@ -60,7 +60,7 @@ class selectedViewController: UIViewController {
             let sizeRange = selected["size_range"] as? Int {
             let setting = UserDefaults.standard
             let size = setting.integer(forKey: "size")
-            recommendedSize.text = "\(size + sizeRange)mm"
+            recommendedSize.text = "내 신발 사이즈 : \(size) \n 추천 사이즈:\(size + sizeRange)mm"
         }
         selShoBrand.text = selectedShoes?["brand"] as? String
         selShoName.text = selectedShoes?["name"] as? String
