@@ -37,6 +37,12 @@ class SearchShoesTableViewController: UITableViewController, UISearchResultsUpda
     var ShoesList = [NSDictionary?]()
     var filteredShoes = [NSDictionary?]()
     
+    @IBAction func changesize(_ sender: Any) {
+        let setting = UserDefaults.standard
+        _ = setting.integer(forKey: "size")
+        let sizeVC = self.storyboard?.instantiateViewController(withIdentifier: "sizeViewController")
+        self.present(sizeVC!, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
