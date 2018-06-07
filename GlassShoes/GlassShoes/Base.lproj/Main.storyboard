@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JeZ-0w-zXe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Md4-ae-GWI">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -54,7 +54,7 @@
         <!--내사이즈-->
         <scene sceneID="is5-MR-sLp">
             <objects>
-                <viewController id="go9-4p-Vbe" customClass="________ViewController" customModule="GlassShoes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sizeViewController" id="go9-4p-Vbe" customClass="________ViewController" customModule="GlassShoes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xYX-ke-5Kf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,6 +90,14 @@
                                     <constraint firstAttribute="width" constant="55" id="qpY-4x-Eyi"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbW-Cw-Fmh">
+                                <rect key="frame" x="172" y="536" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="확인"/>
+                                <connections>
+                                    <action selector="okay:" destination="go9-4p-Vbe" eventType="touchUpInside" id="iNc-c3-U5c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -109,7 +117,6 @@
                         <barButtonItem key="rightBarButtonItem" title="다음" id="Q0Z-xl-3pH">
                             <connections>
                                 <action selector="next:" destination="go9-4p-Vbe" id="JSe-CY-95R"/>
-                                <segue destination="dke-M1-Xvx" kind="presentation" id="EEx-V7-IcT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -121,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qSX-JQ-gVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1740" y="885.96059113300498"/>
+            <point key="canvasLocation" x="1143" y="904"/>
         </scene>
         <!--신발 검색-->
         <scene sceneID="BYT-nc-G3j">
@@ -290,7 +297,7 @@
                                     <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="05Q-Io-4QI" kind="show" id="8bV-0w-kFP"/>
+                                    <action selector="clickto:" destination="Md4-ae-GWI" eventType="touchUpInside" id="bBa-bH-4HT"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="1N1-Tg-Jri">
@@ -342,18 +349,15 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="go9-4p-Vbe" kind="relationship" relationship="rootViewController" id="atF-AD-YEL"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rBO-di-Mhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="800.79999999999995" y="886.50674662668678"/>
+            <point key="canvasLocation" x="332" y="918"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dJP-ld-Uvz">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dke-M1-Xvx" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MainScene" automaticallyAdjustsScrollViewInsets="NO" id="dke-M1-Xvx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="voC-d3-Wwi">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
