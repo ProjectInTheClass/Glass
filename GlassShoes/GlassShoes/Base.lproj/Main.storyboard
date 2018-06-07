@@ -11,46 +11,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="QYm-U6-Kp5">
-            <objects>
-                <viewController id="JeZ-0w-zXe" customClass="ViewController" customModule="GlassShoes" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="S1a-Fx-1oL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIW-0I-EBy">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
-                                <color key="backgroundColor" red="0.12941176469999999" green="0.78823529410000004" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <segue destination="Md4-ae-GWI" kind="show" id="cAL-Mk-tWp"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="zv5-Sl-lVa">
-                                <rect key="frame" x="67" y="266.66666666666669" width="241" height="279.00000000000006"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="279" id="Hhc-OB-r23"/>
-                                    <constraint firstAttribute="width" secondItem="zv5-Sl-lVa" secondAttribute="height" multiplier="241:279" id="daw-9W-eIw"/>
-                                    <constraint firstAttribute="width" constant="241" id="rQs-6R-ftX"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="qIW-0I-EBy" firstAttribute="leading" secondItem="6wO-mr-2vm" secondAttribute="leading" id="1nJ-pX-eYy"/>
-                            <constraint firstItem="qIW-0I-EBy" firstAttribute="top" secondItem="6wO-mr-2vm" secondAttribute="top" id="TyL-LO-VHj"/>
-                            <constraint firstItem="zv5-Sl-lVa" firstAttribute="centerX" secondItem="S1a-Fx-1oL" secondAttribute="centerX" id="WWq-vL-vrb"/>
-                            <constraint firstItem="6wO-mr-2vm" firstAttribute="trailing" secondItem="qIW-0I-EBy" secondAttribute="trailing" id="ap1-IT-Jve"/>
-                            <constraint firstItem="zv5-Sl-lVa" firstAttribute="centerY" secondItem="S1a-Fx-1oL" secondAttribute="centerY" id="lTq-b6-Nfy"/>
-                            <constraint firstItem="6wO-mr-2vm" firstAttribute="bottom" secondItem="qIW-0I-EBy" secondAttribute="bottom" id="wNa-CF-JnB"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6wO-mr-2vm"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sqw-vQ-Js5" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-114.40000000000001" y="132.26600985221674"/>
-        </scene>
         <!--내사이즈-->
         <scene sceneID="is5-MR-sLp">
             <objects>
@@ -91,9 +51,9 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbW-Cw-Fmh">
-                                <rect key="frame" x="172" y="536" width="30" height="30"/>
+                                <rect key="frame" x="329" y="44" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="확인"/>
+                                <state key="normal" title="완료"/>
                                 <connections>
                                     <action selector="okay:" destination="go9-4p-Vbe" eventType="touchUpInside" id="iNc-c3-U5c"/>
                                 </connections>
@@ -128,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qSX-JQ-gVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1143" y="904"/>
+            <point key="canvasLocation" x="1623" y="886"/>
         </scene>
         <!--신발 검색-->
         <scene sceneID="BYT-nc-G3j">
@@ -172,7 +132,9 @@
                             <outlet property="delegate" destination="W1p-BO-8xE" id="GMw-Is-qyl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="신발 검색" id="j4s-SI-bq9"/>
+                    <navigationItem key="navigationItem" title="신발 검색" id="j4s-SI-bq9">
+                        <barButtonItem key="rightBarButtonItem" title="사이즈 수정" id="V5D-Pi-mcM"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="Searchtableview" destination="XwX-LN-32a" id="8cc-QJ-Tua"/>
                     </connections>
@@ -375,6 +337,6 @@
     </scenes>
     <resources>
         <image name="Image" width="3000" height="2636"/>
-        <image name="Image-1" width="100" height="84"/>
+        <image name="Image-1" width="66" height="56"/>
     </resources>
 </document>
