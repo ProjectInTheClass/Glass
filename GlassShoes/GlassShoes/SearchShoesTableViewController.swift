@@ -14,24 +14,7 @@ class SearchShoesTableViewController: UITableViewController, UISearchResultsUpda
     @IBOutlet var Searchtableview: UITableView!
     let searchController = UISearchController(searchResultsController: nil)
     
-    
-    /*
-     @IBAction func oepnSFSafariViewControllerAction(_ sender: Any) {
-     
-     guard let url = URL(string: "https://zeddios.tistory.com") else { return }
-     
-     let safariViewController = SFSafariViewController(url: url)
-     
-     present(safariViewController, animated: true, completion: nil)
-     
-     }
-     
-     
-        
-     
-     */
-    
-    
+
     
     var ref = Database.database().reference()
     var ShoesList = [NSDictionary?]()
@@ -43,6 +26,15 @@ class SearchShoesTableViewController: UITableViewController, UISearchResultsUpda
         let sizeVC = self.storyboard?.instantiateViewController(withIdentifier: "sizeViewController")
         self.present(sizeVC!, animated: true, completion: nil)
     }
+    
+    
+    @IBAction func openWrite(_ sender: Any) {
+        
+        let writeVC = self.storyboard?.instantiateViewController(withIdentifier: "dataWriteScene")
+        self.present(writeVC!, animated: true, completion: nil)
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

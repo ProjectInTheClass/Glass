@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18609B6220C923CD008091F9 /* dataWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18609B6120C923CD008091F9 /* dataWriteViewController.swift */; };
 		1891A88E20B821C100545026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891A88D20B821C100545026 /* AppDelegate.swift */; };
 		1891A89020B821C100545026 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891A88F20B821C100545026 /* ViewController.swift */; };
 		1891A89320B821C100545026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1891A89120B821C100545026 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		068F1D0F15C75F0A1826D8D9 /* Pods_GlassShoesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlassShoesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18609B6120C923CD008091F9 /* dataWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataWriteViewController.swift; sourceTree = "<group>"; };
 		1891A88A20B821C100545026 /* GlassShoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlassShoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1891A88D20B821C100545026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1891A88F20B821C100545026 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				1891A88F20B821C100545026 /* ViewController.swift */,
 				B8BD49DF20C3E6C400E12C30 /* 내사이즈ViewController.swift */,
 				1891A89120B821C100545026 /* Main.storyboard */,
+				18609B6120C923CD008091F9 /* dataWriteViewController.swift */,
 				B8A31AD920C57887009CA095 /* introViewController.swift */,
 				2523318C20C538120044A6ED /* selectedViewController.swift */,
 				1891A89420B821C200545026 /* Assets.xcassets */,
@@ -401,6 +404,7 @@
 				1891A88E20B821C100545026 /* AppDelegate.swift in Sources */,
 				189FE8E020C42D8E00C6F3CD /* SearchShoesTableViewController.swift in Sources */,
 				B8BD49E020C3E6C400E12C30 /* 내사이즈ViewController.swift in Sources */,
+				18609B6220C923CD008091F9 /* dataWriteViewController.swift in Sources */,
 				2523318D20C538120044A6ED /* selectedViewController.swift in Sources */,
 				B8A31ADA20C57887009CA095 /* introViewController.swift in Sources */,
 			);
