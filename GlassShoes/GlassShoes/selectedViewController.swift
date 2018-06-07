@@ -43,17 +43,14 @@ class selectedViewController: UIViewController {
     }
     */
     override func viewWillAppear(_ animated: Bool) {
-<<<<<<< HEAD
         
 
-=======
         if let selected = selectedShoes,
             let sizeRange = selected["size_range"] as? Int {
             let setting = UserDefaults.standard
             let size = setting.integer(forKey: "size")
             recommendedSize.text = "\(size + sizeRange)mm"
         }
->>>>>>> f66e08d3e1ac946fcd81aa43dbdcd5826e415555
         selShoBrand.text = selectedShoes?["brand"] as? String
         selShoName.text = selectedShoes?["name"] as? String
         selShoPnum.text = selectedShoes?["product_num"] as? String
