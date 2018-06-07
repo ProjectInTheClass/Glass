@@ -151,7 +151,7 @@ class SearchShoesTableViewController: UITableViewController, UISearchResultsUpda
     {
         self.filteredShoes = self.ShoesList.filter{shoes in
          
-        let shoesname = shoes!["name"] as? String
+        let shoesname = shoes?["name"] as? String
             
           
         return(shoesname?.lowercased().contains(searchText.lowercased()))!

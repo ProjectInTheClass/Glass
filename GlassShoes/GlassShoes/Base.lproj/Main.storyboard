@@ -172,7 +172,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yol-Me-e3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3455.1999999999998" y="886.50674662668678"/>
+            <point key="canvasLocation" x="3455.1999999999998" y="885.96059113300498"/>
         </scene>
         <!--신발 상세 정보-->
         <scene sceneID="fnp-xK-gum">

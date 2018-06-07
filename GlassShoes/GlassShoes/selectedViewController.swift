@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 class selectedViewController: UIViewController {
     @IBOutlet weak var selShoImage: UIImageView!
@@ -42,6 +43,8 @@ class selectedViewController: UIViewController {
     }
     */
     override func viewWillAppear(_ animated: Bool) {
+        
+
         selShoBrand.text = selectedShoes?["brand"] as? String
         selShoName.text = selectedShoes?["name"] as? String
         selShoPnum.text = selectedShoes?["product_num"] as? String
