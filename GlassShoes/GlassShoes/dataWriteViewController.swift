@@ -8,8 +8,9 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseStorage
 
-class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource {
+class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
    
  
     @IBOutlet weak var nameTextField: UITextField!
@@ -19,7 +20,11 @@ class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var genderField: UISegmentedControl!
     @IBOutlet weak var priceField: UITextField!
     
+    @IBOutlet weak var loadImageField: UIImageView!
+    
+    
     var Ref: DatabaseReference!
+    let imagePicker = UIImagePickerController()
     var genderData:String = ""
     var ShoesCount : Int = 0
     
@@ -68,6 +73,40 @@ class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
     func pickerView(_ pickerView: UIPickerView, didSelectRow row:Int, inComponent component: Int){
         selectRow = row
     }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info:[String:AnyObject]){
+       
+        let imageData = info[UIImagePickerControllerEditedImage] as? UIImage
+        loadImageField.image = imageData
+        self.dismiss(animated: true, completion: nil)
+
+/*        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage{
+            
+            var imageData = Data()
+            imageData = UIImageJPEGRepresentation(pickedImage, 0.8)!
+            
+            let imageRef = Storage.storage().reference().child("images/")
+        
+            _ = imageRef.putData(imageData, metadata: nil){(metadata, error) in
+                guard let metadata = metadata else{
+                return
+            }
+                let downloadURL = metadata.self
+                print(downloadURL)
+        
+            }
+        }*/
+    }
+    
+    
+    @IBAction func loadImage(_ sender: Any) {
+        imagePicker.allowsEditing=true
+        imagePicker.sourceType = .photoLibrary
+        
+        self.present(imagePicker, animated: true, completion: nil)
+    }
+    
+    
  
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,6 +114,7 @@ class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
         
         rangeField.delegate = self
         rangeField.dataSource = self
+        imagePicker.delegate = self
         
         genderField.selectedSegmentIndex = 0
 
