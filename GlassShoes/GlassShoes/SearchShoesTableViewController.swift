@@ -10,11 +10,10 @@ import UIKit
 import FirebaseDatabase
 
 class SearchShoesTableViewController: UITableViewController, UISearchResultsUpdating {
-
+    
     @IBOutlet var Searchtableview: UITableView!
     let searchController = UISearchController(searchResultsController: nil)
     
-
     
     var ref = Database.database().reference()
     var ShoesList = [NSDictionary?]()
@@ -34,7 +33,7 @@ class SearchShoesTableViewController: UITableViewController, UISearchResultsUpda
         self.present(writeVC!, animated: true, completion: nil)
     }
     
-    
+    //TODO: pull to refresh
     
     override func viewDidLoad() {
         super.viewDidLoad()
