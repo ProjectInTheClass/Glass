@@ -167,8 +167,7 @@ class SearchShoesTableViewController: UITableViewController, UISearchResultsUpda
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if let indexPath = self.tableView.indexPathForSelectedRow,
-            let nextVC = segue.destination as? selectedViewController {
+        if segue.identifier == "detailSegue", let indexPath = self.tableView.indexPathForSelectedRow, let nextVC = segue.destination as? selectedViewController {
                 let selectedData : NSDictionary?
                 if searchController.isActive && searchController.searchBar.text != ""{
                     selectedData = filteredShoes[indexPath.row]
@@ -180,6 +179,24 @@ class SearchShoesTableViewController: UITableViewController, UISearchResultsUpda
                     nextVC.selectedShoes = selectedData
                 }
         }
+        else if segue.identifier == "writeSegue"{
+            if let nextVC2 = segue.destination as? dataWriteViewController {
+                    nextVC2.ShoesCount = ShoesList.count
+            }
+        }
+        /*if let indexPath = self.tableView.indexPathForSelectedRow,
+            let nextVC = segue.destination as? selectedViewController {
+                let selectedData : NSDictionary?
+                if searchController.isActive && searchController.searchBar.text != ""{
+                    selectedData = filteredShoes[indexPath.row]
+                    nextVC.selectedShoes = selectedData
+                }
+                else
+                {
+                    selectedData = self.ShoesList[indexPath.row]
+                    nextVC.selectedShoes = selectedData
+                }
+        }*/
         
     }
     
