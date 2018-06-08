@@ -13,8 +13,6 @@ class SearchShoesTableViewController: UITableViewController, UISearchResultsUpda
     
     @IBOutlet var Searchtableview: UITableView!
     let searchController = UISearchController(searchResultsController: nil)
-
-  //  var refreshControl: UIRefreshControl?
     
     var ref = Database.database().reference()
     var ShoesList = [NSDictionary?]()
@@ -52,22 +50,8 @@ class SearchShoesTableViewController: UITableViewController, UISearchResultsUpda
         }) { (error) in
             print(error.localizedDescription)
         }
-        addRefrshControl()
-
     }
     
-    func addRefrshControl(){
-        self.refreshControl = UIRefreshControl()
-        refreshControl?.tintColor = UIColor.gray
-        refreshControl?.addTarget(self, action: #selector(refreshList), for: .valueChanged)
-        Searchtableview.addSubview(refreshControl!)
-    }
-    
-    @objc func refreshList() {
-     //   Searchtableview.reloadData()
-        refreshControl?.endRefreshing()
-
-    }
 
     override func viewWillAppear(_ animated: Bool) {
         let setting = UserDefaults.standard
@@ -76,9 +60,6 @@ class SearchShoesTableViewController: UITableViewController, UISearchResultsUpda
             let sizeVC = self.storyboard?.instantiateViewController(withIdentifier: "sizeViewController")
             self.present(sizeVC!, animated: true, completion: nil)
         }
-        
-        //TODO: pull to refresh
-      
         
     }
     

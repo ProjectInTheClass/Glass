@@ -28,11 +28,6 @@ class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
     }
     @IBAction func dbadd(_ sender: Any) {
         
-        /*
-         스냅샷으로 데이터베이스 다른거 정보 가져와서 업뎃시키면서
-         리스트에 업로드
-         lastID
-        */
         
        var data:[String: Any] = ["name" : "신발이름", "brand":"브랜드이름" , "product_num":"품번","gender": "공용", "price" : 10000, "size_range" :5,  ]
   
@@ -44,36 +39,16 @@ class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
         data["size_range"] = Int(Array[selectRow])!
         data["price"] = Int(priceField.text!)
     
-        //self.selectedShoes.append(data)
-        //self.tableView.reloadData()
-        
         let idxnum = ShoesCount
         let changeStr = "Shoes/" + String(idxnum)
         
-        //경로 처리 필요
         self.Ref = Database.database().reference()
         let itemRef = self.Ref.child(changeStr)
         itemRef.setValue(data)
         
-
-        //reload tableview도 해야하고...!
-        //tableview를 불러오면 그냥 카운트값에 +1하면 되는 것...
-        
         self.dismiss(animated: true, completion: nil)
         
     }
-    
-    
-    
-   /* @IBOutlet weak var profileImageView: UIImageView! = {
-        let imageView = UIImageView()
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleSelectProfileImageView(tap:))) )
-        imageView.isUserInteractionEnabled = true
-    
-        return imageView
-    }()*/
-    
     
     var selectRow = 0
     var Array = ["-20", "-15", "-10"," -5"," 0"," 5"," 10","15", "20"]
