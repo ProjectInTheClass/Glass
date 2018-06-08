@@ -64,6 +64,14 @@ class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
     
     
     
+   /* @IBOutlet weak var profileImageView: UIImageView! = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleSelectProfileImageView(tap:))) )
+        imageView.isUserInteractionEnabled = true
+    
+        return imageView
+    }()*/
     
     
     var selectRow = 0

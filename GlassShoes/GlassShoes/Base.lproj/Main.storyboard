@@ -136,6 +136,7 @@
                         <barButtonItem key="leftBarButtonItem" title="새 신발 추가" id="QhM-kl-M6R">
                             <connections>
                                 <action selector="openWrite:" destination="W1p-BO-8xE" id="hHn-ON-4sb"/>
+                                <segue destination="OfQ-SD-uoI" kind="presentation" id="Nhb-kr-4yh"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="사이즈 수정" id="V5D-Pi-mcM">
@@ -276,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qUN-7I-ZBx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3453.5999999999999" y="1621.92118226601"/>
+            <point key="canvasLocation" x="3455" y="1617"/>
         </scene>
         <!--신발 상세 정보-->
         <scene sceneID="fnp-xK-gum">
