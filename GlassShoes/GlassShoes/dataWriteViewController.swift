@@ -21,6 +21,7 @@ class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
     
     var Ref: DatabaseReference!
     var genderData:String = ""
+    var ShoesCount : Int = 0
     
     @IBAction func canclaAdd(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -46,7 +47,7 @@ class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
         //self.selectedShoes.append(data)
         //self.tableView.reloadData()
         
-        let idxnum = 53
+        let idxnum = ShoesCount
         let changeStr = "Shoes/" + String(idxnum)
         
         //경로 처리 필요
@@ -114,6 +115,10 @@ class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
             
         }
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print(ShoesCount)
     }
     
     override func didReceiveMemoryWarning() {
