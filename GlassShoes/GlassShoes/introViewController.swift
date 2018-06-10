@@ -10,6 +10,7 @@ import UIKit
 
 class introViewController: UIViewController {
 
+    @IBOutlet weak var textView: UILabel!
     @IBOutlet weak var start: UIButton!
     
     @IBAction func clickto(_ sender: Any) {
@@ -21,6 +22,7 @@ class introViewController: UIViewController {
         super.viewDidLoad()
         start.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
+        textView.text = "신데렐라의 유리구두처럼,\n당신에게 맞는 최적의 사이즈를 찾아드립니다."
     }
 
     override func didReceiveMemoryWarning() {

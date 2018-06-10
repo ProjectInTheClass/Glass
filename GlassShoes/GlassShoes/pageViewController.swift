@@ -13,17 +13,19 @@ class pageViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var pageControl: UIPageControl!
-    var images = ["glass_shoes.jpeg", "glass_shoes2.jpeg", "last.png"]
-    var texts = ["온라인으로 신발을 살때 이 신발이 정사이즈로 나왔는지, 아니면 좀더 크게 나왔는지 알지 못해 고민되셨던 적이 있나요?", "이제 더 이상 걱정하지 마세요.", "신데렐라의 유리구두처럼,\n당신에게 맞는 최적의 사이즈를 찾아드립니다."]
+    var images = ["glass_shoes.jpeg", "scene3.png"]
+    var texts = ["온라인으로 신발을 살때 이 신발이 정사이즈로 나왔는지, 아니면 좀더 크게 나왔는지 알지 못해 고민되셨던 적이 있나요?", "이제 더 이상 걱정하지 마세요."]
     override func viewDidLoad() {
         super.viewDidLoad()
         pageControl.numberOfPages = images.count
         pageControl.currentPage = 0
         imageView.image = UIImage(named:images[0])
         textView.text = texts[0]
+        imageView.layer.cornerRadius = imageView.frame.size.height / 2
+        imageView.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
-
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -31,8 +33,8 @@ class pageViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         // 타이머를 이용해서 자동 페이지 이동
-        Timer.scheduledTimer(withTimeInterval: 3.0, repeats: true) { (timer) in
-            if self.pageControl.currentPage == 2 {
+        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { (timer) in
+            if self.pageControl.currentPage == 1 {
                 timer.invalidate()
                 
                 let appDelegate = UIApplication.shared.delegate!

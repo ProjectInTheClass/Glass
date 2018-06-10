@@ -7,6 +7,8 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -413,29 +415,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ya-3d-3iN">
-                                <rect key="frame" x="67" y="180" width="240" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6ya-3d-3iN">
+                                <rect key="frame" x="18" y="176" width="337.33333333333331" height="337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6ya-3d-3iN" secondAttribute="height" multiplier="1:1" id="JAS-HO-vpr"/>
+                                </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WDs-Sn-ryg">
-                                <rect key="frame" x="67" y="403" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="aXX-Oh-vod">
-                                <rect key="frame" x="151" y="554" width="73" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="aXX-Oh-vod">
+                                <rect key="frame" x="176" y="632" width="23" height="172"/>
                                 <color key="pageIndicatorTintColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="pageChanged:" destination="ebb-zm-vGZ" eventType="valueChanged" id="Gs2-Lc-vwL"/>
                                 </connections>
                             </pageControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WDs-Sn-ryg">
+                                <rect key="frame" x="16" y="529" width="343" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="vJ9-HR-704"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WDs-Sn-ryg" firstAttribute="centerX" secondItem="xF0-05-SIO" secondAttribute="centerX" id="0Nr-XF-Yuj"/>
+                            <constraint firstItem="6ya-3d-3iN" firstAttribute="centerX" secondItem="xF0-05-SIO" secondAttribute="centerX" id="BzX-t1-lFQ"/>
+                            <constraint firstItem="6ya-3d-3iN" firstAttribute="centerY" secondItem="xF0-05-SIO" secondAttribute="centerY" constant="-61.5" id="Qvh-OB-pxK"/>
+                            <constraint firstItem="WDs-Sn-ryg" firstAttribute="leading" secondItem="xF0-05-SIO" secondAttribute="leadingMargin" id="lOC-ag-O8c"/>
+                            <constraint firstItem="WDs-Sn-ryg" firstAttribute="top" secondItem="6ya-3d-3iN" secondAttribute="bottom" constant="16" id="lUF-Pr-f6N"/>
+                            <constraint firstItem="6ya-3d-3iN" firstAttribute="width" secondItem="xF0-05-SIO" secondAttribute="width" multiplier="0.9" id="mfS-BJ-Oak"/>
+                            <constraint firstItem="WDs-Sn-ryg" firstAttribute="centerX" secondItem="aXX-Oh-vod" secondAttribute="centerX" id="raJ-Kn-j8b"/>
+                            <constraint firstItem="aXX-Oh-vod" firstAttribute="top" secondItem="WDs-Sn-ryg" secondAttribute="bottom" constant="8" id="uej-Xc-hSq"/>
+                            <constraint firstAttribute="bottom" secondItem="aXX-Oh-vod" secondAttribute="bottom" constant="8" id="w9a-ZP-bIc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="350-x9-YKt"/>
                     </view>
                     <connections>
@@ -456,7 +471,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="muzi" translatesAutoresizingMaskIntoConstraints="NO" id="1N1-Tg-Jri">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="glass_shoes2.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="1N1-Tg-Jri">
                                 <rect key="frame" x="67" y="145.66666666666666" width="240" height="209.99999999999997"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1N1-Tg-Jri" secondAttribute="height" multiplier="8:7" id="AXm-qR-kse"/>
@@ -504,6 +519,7 @@
                     </view>
                     <connections>
                         <outlet property="start" destination="qfJ-a6-JZa" id="4SI-ze-CzN"/>
+                        <outlet property="textView" destination="3Ur-bv-JBV" id="652-7h-3Lz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gjO-nP-dNI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -531,6 +547,6 @@
     </scenes>
     <resources>
         <image name="Image" width="3000" height="2636"/>
-        <image name="muzi" width="66" height="56"/>
+        <image name="glass_shoes2.jpeg" width="450" height="337"/>
     </resources>
 </document>

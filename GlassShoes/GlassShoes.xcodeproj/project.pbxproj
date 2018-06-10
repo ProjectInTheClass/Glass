@@ -23,7 +23,7 @@
 		B866BC0220CCB8F40059D8DF /* pageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B866BC0120CCB8F40059D8DF /* pageViewController.swift */; };
 		B866BC0420CCD9840059D8DF /* glass_shoes.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B866BC0320CCD9810059D8DF /* glass_shoes.jpeg */; };
 		B866BC0620CCD98C0059D8DF /* glass_shoes2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B866BC0520CCD98A0059D8DF /* glass_shoes2.jpeg */; };
-		B866BC0820CCD9B60059D8DF /* last.png in Resources */ = {isa = PBXBuildFile; fileRef = B866BC0720CCD9B40059D8DF /* last.png */; };
+		B866BC0E20CD5AFA0059D8DF /* scene3.png in Resources */ = {isa = PBXBuildFile; fileRef = B866BC0D20CD5AF80059D8DF /* scene3.png */; };
 		B8A31ADA20C57887009CA095 /* introViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A31AD920C57887009CA095 /* introViewController.swift */; };
 		B8BD49E020C3E6C400E12C30 /* 내사이즈ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BD49DF20C3E6C400E12C30 /* 내사이즈ViewController.swift */; };
 		C85FCE37A36B47FE55306F70 /* Pods_GlassShoes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F3BDB1823EA7313BDCF97A /* Pods_GlassShoes.framework */; };
@@ -75,7 +75,7 @@
 		B866BC0120CCB8F40059D8DF /* pageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageViewController.swift; sourceTree = "<group>"; };
 		B866BC0320CCD9810059D8DF /* glass_shoes.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = glass_shoes.jpeg; sourceTree = "<group>"; };
 		B866BC0520CCD98A0059D8DF /* glass_shoes2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = glass_shoes2.jpeg; sourceTree = "<group>"; };
-		B866BC0720CCD9B40059D8DF /* last.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = last.png; sourceTree = "<group>"; };
+		B866BC0D20CD5AF80059D8DF /* scene3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scene3.png; sourceTree = "<group>"; };
 		B8A31AD920C57887009CA095 /* introViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = introViewController.swift; sourceTree = "<group>"; };
 		B8BD49DF20C3E6C400E12C30 /* 내사이즈ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "내사이즈ViewController.swift"; sourceTree = "<group>"; };
 		BFAD366D8DFC013B6E1EEF03 /* Pods-GlassShoesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlassShoesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlassShoesTests/Pods-GlassShoesTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,9 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				1891A88D20B821C100545026 /* AppDelegate.swift */,
-				B866BC0720CCD9B40059D8DF /* last.png */,
 				B866BC0520CCD98A0059D8DF /* glass_shoes2.jpeg */,
 				B866BC0320CCD9810059D8DF /* glass_shoes.jpeg */,
+				B866BC0D20CD5AF80059D8DF /* scene3.png */,
 				1891A88F20B821C100545026 /* ViewController.swift */,
 				B8BD49DF20C3E6C400E12C30 /* 내사이즈ViewController.swift */,
 				1891A89120B821C100545026 /* Main.storyboard */,
@@ -305,11 +305,11 @@
 			files = (
 				B866BC0620CCD98C0059D8DF /* glass_shoes2.jpeg in Resources */,
 				B866BC0420CCD9840059D8DF /* glass_shoes.jpeg in Resources */,
+				B866BC0E20CD5AFA0059D8DF /* scene3.png in Resources */,
 				1891A89820B821C200545026 /* LaunchScreen.storyboard in Resources */,
 				189FE8E220C4397400C6F3CD /* GoogleService-Info.plist in Resources */,
 				1891A89520B821C200545026 /* Assets.xcassets in Resources */,
 				1891A89320B821C100545026 /* Main.storyboard in Resources */,
-				B866BC0820CCD9B60059D8DF /* last.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
