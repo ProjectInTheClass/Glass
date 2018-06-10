@@ -93,7 +93,7 @@ class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
 
             _ = imageRef.putData(imageData, metadata: nil) {(metadata, error) in
                 guard error == nil else {
-                    print("Firebase storage putDate Error : \(error)")
+           //         print("Firebase storage putDate Error : \(error)")
                     return
                 }
                 imageRef.downloadURL{(url,error) in
@@ -126,11 +126,23 @@ class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
                 else {
                     // TODO: 설정가서 권한 주세요~! 라고 알림. UIAlertViewController 사용
                     print("authorization status : \(status)")
+                    
+                   // UIAlertController
+                    let alertController = UIAlertController(title: "photo library", message:
+                        "Can not access the photo library", preferredStyle: UIAlertControllerStyle.alert)
+                    alertController.addAction(UIAlertAction(title: "Check", style: UIAlertActionStyle.default,handler: nil))
+                    self.present(alertController, animated: true, completion: nil)
+        
+                    
                 }
             }
         }
         else {
             // TODO: 설정가서 권한 주세요~! 라고 알림. UIAlertViewController 사용
+            let alertController = UIAlertController(title: "photo library", message:
+                "Can not access the photo library", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "Check", style: UIAlertActionStyle.default,handler: nil))
+            self.present(alertController, animated: true, completion: nil)
         }
         
         
