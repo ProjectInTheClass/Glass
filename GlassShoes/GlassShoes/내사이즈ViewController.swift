@@ -10,6 +10,10 @@ import UIKit
 
 class ________ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var myimage: UIImageView!
+
+    @IBAction func cancel(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func okay(_ sender: Any) {
         let setting = UserDefaults.standard
