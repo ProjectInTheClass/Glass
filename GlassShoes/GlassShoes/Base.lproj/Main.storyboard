@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Md4-ae-GWI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ebb-zm-vGZ">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -397,29 +397,57 @@
             </objects>
             <point key="canvasLocation" x="4181.6000000000004" y="885.96059113300498"/>
         </scene>
+        <!--Page View Controller-->
+        <scene sceneID="K1p-Gv-Kb7">
+            <objects>
+                <viewController id="ebb-zm-vGZ" customClass="pageViewController" customModule="GlassShoes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xF0-05-SIO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ya-3d-3iN">
+                                <rect key="frame" x="67" y="180" width="240" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WDs-Sn-ryg">
+                                <rect key="frame" x="67" y="403" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="aXX-Oh-vod">
+                                <rect key="frame" x="151" y="554" width="73" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="pageChanged:" destination="ebb-zm-vGZ" eventType="valueChanged" id="Gs2-Lc-vwL"/>
+                                </connections>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="350-x9-YKt"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="6ya-3d-3iN" id="59p-mj-89x"/>
+                        <outlet property="pageControl" destination="aXX-Oh-vod" id="hOM-JP-ufA"/>
+                        <outlet property="textView" destination="WDs-Sn-ryg" id="2sX-SF-Hyl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGo-g2-Mrq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="94.581280788177338"/>
+        </scene>
         <!--Intro View Controller-->
         <scene sceneID="dTO-pb-AQR">
             <objects>
-                <viewController id="Md4-ae-GWI" customClass="introViewController" customModule="GlassShoes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="intro" id="Md4-ae-GWI" customClass="introViewController" customModule="GlassShoes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T2J-sk-A9c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfJ-a6-JZa">
-                                <rect key="frame" x="86" y="723" width="202" height="30"/>
-                                <color key="backgroundColor" red="0.12941176469999999" green="0.78823529410000004" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="qfJ-a6-JZa" secondAttribute="height" multiplier="101:15" id="1AX-uk-6JD"/>
-                                    <constraint firstAttribute="height" constant="30" id="LoT-qb-X9y"/>
-                                    <constraint firstAttribute="width" constant="202" id="ls9-IB-xcc"/>
-                                </constraints>
-                                <state key="normal" title="나에게 맞는 신발 사이즈 찾기 시작">
-                                    <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickto:" destination="Md4-ae-GWI" eventType="touchUpInside" id="bBa-bH-4HT"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="muzi" translatesAutoresizingMaskIntoConstraints="NO" id="1N1-Tg-Jri">
                                 <rect key="frame" x="67" y="145.66666666666666" width="240" height="209.99999999999997"/>
                                 <constraints>
@@ -439,6 +467,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfJ-a6-JZa">
+                                <rect key="frame" x="86" y="703" width="202" height="30"/>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.78823529410000004" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qfJ-a6-JZa" secondAttribute="height" multiplier="101:15" id="1AX-uk-6JD"/>
+                                    <constraint firstAttribute="height" constant="30" id="LoT-qb-X9y"/>
+                                    <constraint firstAttribute="width" constant="202" id="ls9-IB-xcc"/>
+                                </constraints>
+                                <state key="normal" title="나에게 맞는 신발 사이즈 찾기 시작">
+                                    <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickto:" destination="Md4-ae-GWI" eventType="touchUpInside" id="bBa-bH-4HT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -457,7 +500,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gjO-nP-dNI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="934" y="95"/>
+            <point key="canvasLocation" x="1164" y="95"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dJP-ld-Uvz">
