@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseDatabase
 import FirebaseStorage
+import Photos
 
 class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
    
@@ -24,7 +25,7 @@ class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
     
     
     var Ref: DatabaseReference!
-    let imagePicker = UIImagePickerController()
+    
     var genderData:String = ""
     var ShoesCount : Int = 0
     
@@ -74,36 +75,60 @@ class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
         selectRow = row
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info:[String:AnyObject]){
-       
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let imageData = info[UIImagePickerControllerEditedImage] as? UIImage
         loadImageField.image = imageData
-        self.dismiss(animated: true, completion: nil)
+        picker.dismiss(animated: true, completion: nil)
 
-/*        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage{
-            
-            var imageData = Data()
-            imageData = UIImageJPEGRepresentation(pickedImage, 0.8)!
-            
+
+       if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage{
+
+            let imageData = UIImageJPEGRepresentation(pickedImage, 0.8)!
+
             let imageRef = Storage.storage().reference().child("images/")
-        
-            _ = imageRef.putData(imageData, metadata: nil){(metadata, error) in
+
+            _ = imageRef.putData(imageData, metadata: nil) {(metadata, error) in
+                guard error == nil else {
+                    print("Firebase storage putDate Error : \(error)")
+                    return
+                }
                 guard let metadata = metadata else{
                 return
             }
                 let downloadURL = metadata.self
                 print(downloadURL)
-        
+
             }
-        }*/
+        }
     }
     
     
     @IBAction func loadImage(_ sender: Any) {
-        imagePicker.allowsEditing=true
-        imagePicker.sourceType = .photoLibrary
+        let status = PHPhotoLibrary.authorizationStatus()
+        if status == .authorized {
+            let imagePicker = UIImagePickerController()
+            imagePicker.allowsEditing=true
+            imagePicker.delegate = self
+            //imagePicker.sourceType = .photoLibrary
+            
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+        else if status == .notDetermined {
+            PHPhotoLibrary.requestAuthorization { (status) in
+                if status == .authorized {
+                    self.loadImage(sender)
+                }
+                else {
+                    // TODO: 설정가서 권한 주세요~! 라고 알림. UIAlertViewController 사용
+                    print("authorization status : \(status)")
+                }
+            }
+        }
+        else {
+            // TODO: 설정가서 권한 주세요~! 라고 알림. UIAlertViewController 사용
+        }
         
-        self.present(imagePicker, animated: true, completion: nil)
+        
     }
     
     
@@ -114,7 +139,6 @@ class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
         
         rangeField.delegate = self
         rangeField.dataSource = self
-        imagePicker.delegate = self
         
         genderField.selectedSegmentIndex = 0
 

@@ -29,13 +29,29 @@ class pageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func pageChanged(_ sender: Any) {
-        if pageControl.currentPage == 2 {
-            let appDelegate = UIApplication.shared.delegate!
-            appDelegate.window!?.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "intro")
+    override func viewDidAppear(_ animated: Bool) {
+        // 타이머를 이용해서 자동 페이지 이동
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (timer) in
+            if self.pageControl.currentPage == 2 {
+                timer.invalidate()
+                
+                let appDelegate = UIApplication.shared.delegate!
+                appDelegate.window!?.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "intro")
+            }
+            else {
+                self.pageControl.currentPage += 1
+                self.imageView.image = UIImage(named: self.images[self.pageControl.currentPage])
+                self.textView.text = self.texts[self.pageControl.currentPage]
+            }
         }
-        imageView.image = UIImage(named:images[pageControl.currentPage])
-        textView.text = texts[pageControl.currentPage]
+    }
+    
+    @IBAction func pageChanged(_ sender: Any) {
+//        if pageControl.currentPage == 2 {
+//            let appDelegate = UIApplication.shared.delegate!
+//            appDelegate.window!?.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "intro")
+//        }
+        
         
     }
     
