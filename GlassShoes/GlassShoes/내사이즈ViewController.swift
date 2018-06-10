@@ -14,7 +14,7 @@ class ________ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBAction func cancel(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    
+   
     @IBAction func okay(_ sender: Any) {
         let setting = UserDefaults.standard
         let size = Int(Array[selectRow])
@@ -22,6 +22,15 @@ class ________ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         setting.synchronize()
         self.dismiss(animated: true, completion: nil)
     }
+
+    @IBAction func okay2(_ sender: Any) {
+        let setting = UserDefaults.standard
+        let size = Int(Array[selectRow])
+        setting.set(size, forKey: "size")
+        setting.synchronize()
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     @IBOutlet weak var circle1: UIView!
   

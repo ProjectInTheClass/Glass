@@ -31,9 +31,12 @@ class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
     var imageUrl : String = ""
 
     
-    @IBAction func canclaAdd(_ sender: Any) {
+    @IBAction func cancel(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+   
+    
+    
     @IBAction func dbadd(_ sender: Any) {
         
         
