@@ -28,6 +28,8 @@ class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
     
     var genderData:String = ""
     var ShoesCount : Int = 0
+    var imageUrl : String = ""
+
     
     @IBAction func canclaAdd(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -35,17 +37,19 @@ class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
     @IBAction func dbadd(_ sender: Any) {
         
         
-       var data:[String: Any] = ["name" : "신발이름", "brand":"브랜드이름" , "product_num":"품번","gender": "공용", "price" : 10000, "size_range" :5,  ]
+        var data:[String: Any] = ["name" : "신발이름", "brand":"브랜드이름" , "product_num":"품번","gender": "공용", "price" : 10000, "size_range" :5, "url" : "null"  ]
   
 
         data["name"] = nameTextField.text!
         data["brand"] = brandTextField.text!
         data["product_num"] = productnumTextField.text!
         data["gender"] = genderData
-        data["size_range"] = Int(Array[selectRow])!
+        data["size_range"] = Int(Array[selectRow])
         data["price"] = Int(priceField.text!)
+        data["url"] = imageUrl
     
         let idxnum = ShoesCount
+        print("리스트넘버\(idxnum)")
         let changeStr = "Shoes/" + String(idxnum)
         
         self.Ref = Database.database().reference()
@@ -92,12 +96,13 @@ class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
                     print("Firebase storage putDate Error : \(error)")
                     return
                 }
-                guard let metadata = metadata else{
-                return
-            }
-                let downloadURL = metadata.self
-                print(downloadURL)
-
+                imageRef.downloadURL{(url,error) in
+                    guard let downloadURL = url else{
+                        return
+                    }
+                    self.imageUrl = downloadURL.absoluteString
+                    print(self.imageUrl)
+                }
             }
         }
     }

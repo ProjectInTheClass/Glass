@@ -77,13 +77,13 @@ class selectedViewController: UIViewController {
             selShoPrice.text = String(price)
         }
         
-        //url 처리 될때까지 잠시 주석처리...
-    /*    let urlStr = selectedShoes?["url"] as? String
-        if let url = URL(string: urlStr?),
+        //이미지 url처리
+        let urlStr = selectedShoes?["url"] as? String
+        if let url = URL(string: (urlStr)!),
             let data = try? Data(contentsOf: url) {
             let image = UIImage(data: data)
             selShoImage.image = image
-        }*/
+        }
         
       
         
