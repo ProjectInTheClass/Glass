@@ -12,6 +12,7 @@ class introViewController: UIViewController {
 
     @IBOutlet weak var textView: UILabel!
     @IBOutlet weak var start: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func clickto(_ sender: Any) {
         let appDelegate = UIApplication.shared.delegate!
@@ -23,6 +24,8 @@ class introViewController: UIViewController {
         start.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
         textView.text = "신데렐라의 유리구두처럼,\n당신에게 맞는 최적의 사이즈를 찾아드립니다."
+        imageView.layer.cornerRadius = imageView.frame.size.height / 2
+        imageView.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {

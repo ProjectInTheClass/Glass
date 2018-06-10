@@ -10,7 +10,8 @@ import UIKit
 
 class pageViewController: UIViewController {
 
-    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var textView2: UILabel!
+
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var pageControl: UIPageControl!
     var images = ["glass_shoes.jpeg", "scene3.png"]
@@ -20,7 +21,7 @@ class pageViewController: UIViewController {
         pageControl.numberOfPages = images.count
         pageControl.currentPage = 0
         imageView.image = UIImage(named:images[0])
-        textView.text = texts[0]
+        textView2.text = texts[0]
         imageView.layer.cornerRadius = imageView.frame.size.height / 2
         imageView.clipsToBounds = true
         // Do any additional setup after loading the view.
@@ -43,7 +44,7 @@ class pageViewController: UIViewController {
             else {
                 self.pageControl.currentPage += 1
                 self.imageView.image = UIImage(named: self.images[self.pageControl.currentPage])
-                self.textView.text = self.texts[self.pageControl.currentPage]
+                self.textView2.text = self.texts[self.pageControl.currentPage]
             }
         }
     }
