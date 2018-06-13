@@ -34,7 +34,7 @@ class pageViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         // 타이머를 이용해서 자동 페이지 이동
-        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { (timer) in
+        Timer.scheduledTimer(withTimeInterval: 3.5, repeats: true) { (timer) in
             if self.pageControl.currentPage == 1 {
                 timer.invalidate()
                 
