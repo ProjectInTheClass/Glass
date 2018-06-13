@@ -155,8 +155,8 @@ class dataWriteViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
  
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        loadImageField.layer.borderWidth = 1.0
         rangeField.delegate = self
         rangeField.dataSource = self
         

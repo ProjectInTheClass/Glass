@@ -24,10 +24,10 @@
                                 <rect key="frame" x="27" y="298" width="320" height="216"/>
                             </pickerView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="kQ7-lJ-Yif">
-                                <rect key="frame" x="133" y="574" width="242" height="204"/>
+                                <rect key="frame" x="133" y="522" width="242" height="256"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="kQ7-lJ-Yif" secondAttribute="height" multiplier="121:102" id="RjN-UO-vMz"/>
-                                    <constraint firstAttribute="height" constant="204" id="SGw-Bc-5rl"/>
+                                    <constraint firstAttribute="width" secondItem="kQ7-lJ-Yif" secondAttribute="height" multiplier="121:102" constant="-61.686274509803923" id="RjN-UO-vMz"/>
+                                    <constraint firstAttribute="height" constant="256" id="SGw-Bc-5rl"/>
                                     <constraint firstAttribute="width" constant="242" id="eqF-K5-Tht"/>
                                 </constraints>
                             </imageView>
@@ -91,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qSX-JQ-gVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1623" y="886"/>
+            <point key="canvasLocation" x="1621.5999999999999" y="885.96059113300498"/>
         </scene>
         <!--신발 검색-->
         <scene sceneID="BYT-nc-G3j">
@@ -190,21 +190,21 @@
                                 <rect key="frame" x="35" y="372" width="45" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="성별" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAp-Lt-OfE">
                                 <rect key="frame" x="42" y="509" width="30" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="사이즈 범위" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glo-5R-4bb">
                                 <rect key="frame" x="18" y="599" width="78" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="q2i-qp-OXB">
@@ -233,7 +233,7 @@
                                 <rect key="frame" x="168" y="261" width="82" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="이미지 업로드">
-                                    <color key="titleColor" red="0.12941176469999999" green="0.78823529410000004" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="loadImage:" destination="OfQ-SD-uoI" eventType="touchUpInside" id="cRc-oG-Iw9"/>
@@ -243,7 +243,7 @@
                                 <rect key="frame" x="42" y="447" width="30" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yEC-KK-7bA">
@@ -277,14 +277,14 @@
                                 <rect key="frame" x="25" y="303" width="64" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="가격" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqZ-PI-4Zk">
                                 <rect key="frame" x="42" y="683" width="30" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
