@@ -470,9 +470,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="glass_shoes2.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="1N1-Tg-Jri">
-                                <rect key="frame" x="18.666666666666657" y="183.66666666666663" width="337.66666666666674" height="303"/>
+                                <rect key="frame" x="19" y="176" width="337.66666666666663" height="337.66666666666663"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="1N1-Tg-Jri" secondAttribute="height" multiplier="375:337" id="wJQ-4x-Gz3"/>
+                                    <constraint firstAttribute="width" secondItem="1N1-Tg-Jri" secondAttribute="height" multiplier="375:337" constant="-38.075173095944592" id="wJQ-4x-Gz3"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfJ-a6-JZa">
@@ -497,9 +497,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="1N1-Tg-Jri" firstAttribute="centerY" secondItem="T2J-sk-A9c" secondAttribute="centerY" constant="-70.833333333333371" id="0gn-ZE-VFc"/>
+                            <constraint firstItem="1N1-Tg-Jri" firstAttribute="centerY" secondItem="T2J-sk-A9c" secondAttribute="centerY" constant="-61.166666666666686" id="0gn-ZE-VFc"/>
                             <constraint firstItem="qfJ-a6-JZa" firstAttribute="centerX" secondItem="T2J-sk-A9c" secondAttribute="centerX" id="4ph-5U-hOZ"/>
-                            <constraint firstItem="3Ur-bv-JBV" firstAttribute="top" secondItem="1N1-Tg-Jri" secondAttribute="bottom" constant="21.333333333333371" id="7Nn-ps-vWR"/>
+                            <constraint firstItem="3Ur-bv-JBV" firstAttribute="top" secondItem="1N1-Tg-Jri" secondAttribute="bottom" constant="-2.6666666666666288" id="7Nn-ps-vWR"/>
                             <constraint firstItem="3Ur-bv-JBV" firstAttribute="centerX" secondItem="T2J-sk-A9c" secondAttribute="centerX" id="ABQ-gF-bpF"/>
                             <constraint firstItem="3Ur-bv-JBV" firstAttribute="width" secondItem="1N1-Tg-Jri" secondAttribute="width" id="E2k-Q9-7ax"/>
                             <constraint firstItem="qfJ-a6-JZa" firstAttribute="width" secondItem="T2J-sk-A9c" secondAttribute="width" multiplier="0.7" id="V1g-QD-Mw2"/>
