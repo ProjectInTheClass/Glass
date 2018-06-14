@@ -42,11 +42,13 @@
                                 <items>
                                     <navigationItem title="내사이즈" prompt="  " id="bTb-BE-XNF">
                                         <barButtonItem key="leftBarButtonItem" title="취소" id="B0u-1L-WH6">
+                                            <color key="tintColor" red="0.23529411759999999" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="cancel:" destination="go9-4p-Vbe" id="5a4-go-nqY"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="완료" id="YgK-pk-YZB">
+                                            <color key="tintColor" red="0.23529411759999999" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="okay:" destination="go9-4p-Vbe" id="KYz-oa-st8"/>
                                             </connections>
@@ -261,19 +263,23 @@
                                 <items>
                                     <navigationItem title="신발 추가" prompt="  " id="axT-gN-eZs">
                                         <barButtonItem key="leftBarButtonItem" title="취소" id="6FU-DM-l78">
+                                            <color key="tintColor" red="0.23529411759999999" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="cancel:" destination="OfQ-SD-uoI" id="q8o-ft-IgS"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="mHb-mI-IZf">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" id="mHb-mI-IZf">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="h2Z-7B-7Dg">
                                                 <rect key="frame" x="329" y="41" width="30" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="완료"/>
+                                                <state key="normal" title="완료">
+                                                    <color key="titleColor" red="0.23529411759999999" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="dbadd:" destination="OfQ-SD-uoI" eventType="touchUpInside" id="7Wp-rV-kbJ"/>
                                                 </connections>
                                             </button>
+                                            <color key="tintColor" red="0.23529411759999999" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>

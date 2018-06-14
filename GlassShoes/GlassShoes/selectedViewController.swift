@@ -41,8 +41,8 @@ class selectedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.tintColor = UIColor(displayP3Red: 60/255, green: 200/255, blue: 200/255, alpha: 1.0)
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
