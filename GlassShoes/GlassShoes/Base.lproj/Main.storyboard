@@ -560,9 +560,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5D1-La-ML8">
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5D1-La-ML8">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89380943719999995" green="0.98919203369999997" blue="0.89051500849999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="glass_shoes2.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="1N1-Tg-Jri">
@@ -596,9 +595,13 @@
                         <color key="backgroundColor" red="1" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qfJ-a6-JZa" firstAttribute="top" secondItem="3Ur-bv-JBV" secondAttribute="bottom" constant="-1" id="C5f-2B-Mdp"/>
+                            <constraint firstItem="5D1-La-ML8" firstAttribute="leading" secondItem="gcV-kg-6hu" secondAttribute="leading" id="Ccb-t4-ziE"/>
                             <constraint firstItem="1N1-Tg-Jri" firstAttribute="centerX" secondItem="T2J-sk-A9c" secondAttribute="centerX" id="F7R-Q9-8Ci"/>
                             <constraint firstItem="1N1-Tg-Jri" firstAttribute="trailing" secondItem="gcV-kg-6hu" secondAttribute="trailing" id="HF6-8S-dDI"/>
+                            <constraint firstItem="5D1-La-ML8" firstAttribute="top" secondItem="T2J-sk-A9c" secondAttribute="top" id="KdA-MY-bWg"/>
+                            <constraint firstAttribute="bottom" secondItem="5D1-La-ML8" secondAttribute="bottom" id="awo-0l-OZi"/>
                             <constraint firstItem="qfJ-a6-JZa" firstAttribute="centerX" secondItem="1N1-Tg-Jri" secondAttribute="centerX" id="caT-Hz-jeo"/>
+                            <constraint firstItem="5D1-La-ML8" firstAttribute="trailing" secondItem="gcV-kg-6hu" secondAttribute="trailing" id="gBP-OG-QWE"/>
                             <constraint firstItem="3Ur-bv-JBV" firstAttribute="top" secondItem="1N1-Tg-Jri" secondAttribute="bottom" constant="20" id="lyy-vF-InZ"/>
                             <constraint firstItem="1N1-Tg-Jri" firstAttribute="centerY" secondItem="T2J-sk-A9c" secondAttribute="centerY" constant="-22" id="oty-mv-CG7"/>
                             <constraint firstItem="1N1-Tg-Jri" firstAttribute="leading" secondItem="gcV-kg-6hu" secondAttribute="leading" id="zr8-iV-b8m"/>
