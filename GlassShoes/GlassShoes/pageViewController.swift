@@ -22,8 +22,8 @@ class pageViewController: UIViewController {
         pageControl.currentPage = 0
         imageView.image = UIImage(named:images[0])
         textView2.text = texts[0]
-        imageView.layer.cornerRadius = imageView.frame.size.height / 2
-        imageView.clipsToBounds = true
+        //imageView.layer.cornerRadius = imageView.frame.size.height / 2
+        //imageView.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
    
