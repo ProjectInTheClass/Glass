@@ -21,14 +21,14 @@ class selectedViewController: UIViewController {
     
     @IBAction func gotoWeb(_ sender: Any) {
         
-        let searchUrl:String = "http://www.abcmart.co.kr/abc/search/search?searchTerm="
-      /*  let forSearchBrand:String = selectedShoes?["brand"] as! String
+        let searchUrl:String = "https://msearch.shopping.naver.com/search/all.nhn?query="
+      //  let forSearchBrand:String = selectedShoes?["brand"] as! String
         let forSearchNum:String = selectedShoes?["product_num"] as! String
         
-        let sumUrl = searchUrl + forSearchBrand+forSearchNum
+        let sumUrl = searchUrl + forSearchNum
         print(sumUrl)
-        */
-        guard let url = URL(string: searchUrl ) else { return }
+
+        guard let url = URL(string: sumUrl ) else { return }
         
         let safariViewController = SFSafariViewController(url: url)
         
