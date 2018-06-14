@@ -39,6 +39,9 @@ class SearchShoesTableViewController: UITableViewController, UISearchResultsUpda
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
+        searchController.searchBar.barTintColor = UIColor(displayP3Red: 60/255, green: 200/255, blue: 200/255, alpha: 1.0)
+        //tintColor = UIColor(displayP3Red: 60, green: 200, blue: 200, alpha: 0)
+      
         tableView.tableHeaderView = searchController.searchBar
         ref.child("Shoes").queryOrdered(byChild: "brand").observe(.childAdded, with:{ (snapshot) in
             

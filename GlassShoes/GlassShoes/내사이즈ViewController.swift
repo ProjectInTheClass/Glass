@@ -32,7 +32,7 @@ class ________ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     
-    @IBOutlet weak var circle1: UIView!
+   //@IBOutlet weak var circle1: UIView!
   
     var selectRow = 0
     var Array = ["200", "205", "210", "215", "220", "225", "230", "235", "240", "245", "250", "255", "260", "270", "275", "280", "285", "290", "295"]
@@ -57,8 +57,8 @@ class ________ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        circle1.layer.cornerRadius = 0.5 * circle1.bounds.size.width
-        circle1.alpha = 0.5
+       // circle1.layer.cornerRadius = 0.5 * circle1.bounds.size.width
+      //  circle1.alpha = 0.5
         myimage.alpha = 0.4
         picker.delegate = self
         picker.dataSource = self

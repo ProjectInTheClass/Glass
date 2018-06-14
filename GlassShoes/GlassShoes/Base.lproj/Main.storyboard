@@ -27,7 +27,7 @@
                                     <constraint firstAttribute="width" secondItem="7Rp-lb-4zG" secondAttribute="height" multiplier="125:72" id="oIr-v5-CAR"/>
                                 </constraints>
                             </pickerView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="주로 신는 운동화는 어떤 사이즈 인가요?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EXc-ss-gLr">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="주로 신는 신발은 어떤 사이즈 인가요?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EXc-ss-gLr">
                                 <rect key="frame" x="37.666666666666657" y="221" width="300" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="8nc-Qv-BvZ"/>
@@ -128,12 +128,14 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="신발 검색" id="j4s-SI-bq9">
                         <barButtonItem key="leftBarButtonItem" title="새 신발 추가" id="QhM-kl-M6R">
+                            <color key="tintColor" red="0.23529411759999999" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="openWrite:" destination="W1p-BO-8xE" id="hHn-ON-4sb"/>
                                 <segue destination="OfQ-SD-uoI" kind="presentation" identifier="writeSegue" id="Nhb-kr-4yh"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="사이즈 수정" id="V5D-Pi-mcM">
+                            <color key="tintColor" red="0.23529411759999999" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="changesize:" destination="W1p-BO-8xE" id="ag5-YW-1cp"/>
                             </connections>
@@ -575,7 +577,7 @@
                                     <constraint firstAttribute="width" secondItem="qfJ-a6-JZa" secondAttribute="height" multiplier="25:2" id="efd-6J-4lE"/>
                                 </constraints>
                                 <state key="normal" title="나에게 맞는 신발 사이즈 찾기 시작">
-                                    <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="clickto:" destination="Md4-ae-GWI" eventType="touchUpInside" id="bBa-bH-4HT"/>
