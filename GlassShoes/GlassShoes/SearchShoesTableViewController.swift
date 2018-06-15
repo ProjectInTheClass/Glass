@@ -55,7 +55,6 @@ class SearchShoesTableViewController: UITableViewController, UISearchResultsUpda
         }
     }
     
-
     override func viewWillAppear(_ animated: Bool) {
         let setting = UserDefaults.standard
         let size = setting.integer(forKey: "size")
