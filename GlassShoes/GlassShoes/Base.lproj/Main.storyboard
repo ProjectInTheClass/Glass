@@ -387,6 +387,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.12941176469999999" green="0.78823529410000004" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -403,6 +406,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FMx-hD-iYP">
                                 <rect key="frame" x="37.666666666666657" y="188" width="300" height="194.33333333333337"/>
@@ -418,27 +424,43 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="품번" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gb9-Wq-lob">
                                 <rect key="frame" x="37.666666666666657" y="396.33333333333331" width="148" height="21"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="gb9-Wq-lob" secondAttribute="height" multiplier="148:21" id="6JM-4e-Cjq"/>
                                     <constraint firstAttribute="width" constant="148" id="NW7-vm-g3Q"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여성용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8WE-EY-UF4">
                                 <rect key="frame" x="37.666666666666664" y="425.33333333333331" width="44.999999999999993" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="가격" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptC-7t-YWU">
-                                <rect key="frame" x="176" y="396" width="187" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가격" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptC-7t-YWU">
+                                <rect key="frame" x="176" y="396" width="162" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ptC-7t-YWU" secondAttribute="height" multiplier="81:10" id="PfZ-4r-tuX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.19215686269999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecY-TK-kof">
                                 <rect key="frame" x="80" y="722" width="215" height="40"/>
@@ -446,6 +468,9 @@
                                 <state key="normal" title="더 자세한 정보 알아보기">
                                     <color key="titleColor" red="0.12941176469999999" green="0.78823529410000004" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                </variation>
                                 <connections>
                                     <action selector="gotoWeb:" destination="EfG-If-cdA" eventType="touchUpInside" id="ra5-KK-Z11"/>
                                 </connections>
@@ -453,6 +478,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ptC-7t-YWU" firstAttribute="trailing" secondItem="FMx-hD-iYP" secondAttribute="trailing" id="3Ye-Xb-nre"/>
                             <constraint firstItem="GZB-7v-Cmd" firstAttribute="bottom" secondItem="ecY-TK-kof" secondAttribute="bottom" constant="16" id="8sn-Uk-Jgz"/>
                             <constraint firstItem="LGV-NM-1hQ" firstAttribute="width" secondItem="5XU-1W-v1y" secondAttribute="width" constant="-75" id="A6H-77-i6z"/>
                             <constraint firstItem="LGV-NM-1hQ" firstAttribute="centerX" secondItem="5XU-1W-v1y" secondAttribute="centerX" id="BYj-XI-IqX"/>
@@ -464,6 +490,7 @@
                             <constraint firstItem="LGV-NM-1hQ" firstAttribute="width" secondItem="FMx-hD-iYP" secondAttribute="width" id="SFN-CO-BBO"/>
                             <constraint firstItem="ztt-qN-gXH" firstAttribute="width" secondItem="5XU-1W-v1y" secondAttribute="width" id="SlB-mw-UpO"/>
                             <constraint firstItem="FMx-hD-iYP" firstAttribute="centerX" secondItem="5XU-1W-v1y" secondAttribute="centerX" id="T4x-ra-FO5"/>
+                            <constraint firstItem="ptC-7t-YWU" firstAttribute="top" secondItem="FMx-hD-iYP" secondAttribute="bottom" constant="13.67" id="UUh-cT-WEi"/>
                             <constraint firstItem="LGV-NM-1hQ" firstAttribute="top" secondItem="8WE-EY-UF4" secondAttribute="bottom" constant="12" id="XNt-wo-VTd"/>
                             <constraint firstItem="9mD-8O-u3i" firstAttribute="trailing" secondItem="ztt-qN-gXH" secondAttribute="trailing" id="YiS-sN-V33"/>
                             <constraint firstItem="FMx-hD-iYP" firstAttribute="width" secondItem="5XU-1W-v1y" secondAttribute="width" multiplier="0.8" id="YpL-u7-Ps3"/>
