@@ -42,7 +42,7 @@
 
 
 - 앱 아이콘  
-**appicon.png**  
+**appIcon.png**  
 
 - 기타 표기되지 않은 항목  
 **all default or empty**
