@@ -12,7 +12,7 @@
 
 - 스크린샷(korean)
 
- ./screenshot
+   ./ForAppStore
 
 - 설명(korean)
 
