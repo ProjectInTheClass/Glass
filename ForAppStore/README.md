@@ -1,22 +1,22 @@
 **앱 정보**
 
 - 이름  
-## 한글: 유리구두
-## 영문: GlassShoes
+ 한글: 유리구두
+ 영문: GlassShoes
 
 - 카테고리  
-## 라이프스타일
-## 유틸리티
+ 라이프스타일
+ 유틸리티
 
-## 앱 심사 정보
+ 앱 심사 정보
 
 - 스크린샷(korean)
 
-## ./screenshot
+ ./screenshot
 
 - 설명(korean)
 
-## 사이즈를 입력하면 알맞은 사이즈를 추천해 드리는 앱입니다.
+ 사이즈를 입력하면 알맞은 사이즈를 추천해 드리는 앱입니다.
 
 -신발 검색 기능
 신발이름으로 검색을 하여 원하는 신발의 정보를 찾을 수 있어요.
@@ -35,14 +35,14 @@
 
 - 키워드 
 
-## 신발사이즈, 신발검색, 신발, shoes, shoessize, 유리구두, glassshoes
+신발사이즈, 신발검색, 신발, shoes, shoessize, 유리구두, glassshoes
 
 - 지원 URL  
-## https://projectintheclass.github.io/Glass
+ https://projectintheclass.github.io/Glass
 
 
 - 앱 아이콘  
-## appIcon.png
+ appIcon.png
 
 - 기타 표기되지 않은 항목  
-## all default or empty
+ all default or empty
