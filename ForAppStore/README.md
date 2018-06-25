@@ -1,37 +1,28 @@
 ## 앱 정보
 
 - 이름  
-**유리구두**  
+**한글: 유리구두**  
+**영문: GlassShoes**
 
 - 카테고리  
 **라이프스타일**  
 **유틸리티**  
 
-## 가격 및 사용가능 여부
-
-- 가격  
-**무료**  
-
-- 사전주문  
-**설정안함**
-
-- 사용 가능 여부  
-**대한민국만 선택**  
-
-- 대량 구입 프로그램  
-**할인 없이 프로그램 제공**  
-
 ## 앱 심사 정보
 
-- 스크린샷  
+- 스크린샷(korean)
 **./screenshot**  
 
-- 설명  
-  
-- 키워드  
+- 설명(korean)
+**  설명 작성 **
+
+
+
+- 키워드 
+**신발사이즈, 신발검색, 신발, shoes, shoessize, 유리구두, glassshoes**
 
 - 지원 URL  
-**https://projectintheclass.github.io/**
+**https://projectintheclass.github.io/Glass/**
 
 
 - 앱 아이콘  
@@ -39,4 +30,3 @@
 
 - 기타 표기되지 않은 항목  
 **all default or empty**
-
