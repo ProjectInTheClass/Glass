@@ -1,0 +1,3 @@
+[submodule "Glass"] 
+  path = Glass
+  url = git://github.com/ProjectInTheClass/Glass/
